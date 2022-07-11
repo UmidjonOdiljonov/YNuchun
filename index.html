@@ -6,20 +6,7 @@
 </head>
 <body>
 Umidjon Odiljonov
-<script>function WriteToFile(passForm) {
-
-    set fso = CreateObject("Scripting.FileSystemObject");
-    set s   = fso.CreateTextFile("<your Path>/filename.txt", True);
-
-    var firstName = document.getElementById('FirstName');
-    var lastName  = document.getElementById('lastName');
-
-    s.writeline("First Name :" + FirstName);
-    s.writeline("Last Name :" + lastName);
-
-    s.writeline("-----------------------------");
-    s.Close();
-}</script>
+<script>saveAs(new File(["CONTENT"], "demo.txt", {type: "text/plain;charset=utf-8"}));</script>
 
 
     // HTML
@@ -27,7 +14,7 @@ Umidjon Odiljonov
         <label>Type your first name:</label>
         <input type="text" name="FirstName" id="firstName" size="20">
 
-        <label>Type your last name: </abel>
+        <label>Type your last name: </label>
             <input type="text" name="LastName" id="lastName" size="20">
 
             <input type="submit" value="submit">
