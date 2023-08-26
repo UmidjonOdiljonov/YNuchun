@@ -2,1234 +2,470 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-  <title>LMS</title>
-  <link rel="shortcut icon" href="https://lms.tuit.uz/assets/images/favicon.ico" type="image/x-icon">
+    <title>LMS</title>
+    <link rel="shortcut icon" href="https://lms.tuit.uz/assets/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-AlertDialog bu:
-sarlavha, 3 tagacha tugma, qiymatlarni belgilash va tanlash mumkin bo‘lgan ro‘yhatdan iborat dialog oynasi
-shaxsiy dialog oynasini yaratish uchun konteyner
-joriy sana va vaqtni belgilab beruvchi dialog oynasi
-joriy sana va vaqtni belgilab beruvchi dialog oynasi
-qandaydir jarayonni ko‘rsatib beruvchi dialog oynasi
-Ilova internet xizmatidan foydalana olishi uchun AndroidManifest.xml fayliga qanday kod qismi qo‘shilishi kerak?
-uses-permission android:name=”android.permission.INTERNET”
-uses-permission android:name=”android.usingpermission.INTERNET”
-uses-allow android:name=”android.allow.INTERNET”
-uses-request android:name=”android.allow.INTERNET”
-Image (Imageview) komponentasi qanday maqsadda ishlatiladi?
-Rasmlarni joylashtirish uchun
-Ma’lumotlarni jadval ko‘rinishida chop etish uchun
-Audioma’lumotlarni joylashtirish uchun
-Matnli ma’lumotlarni joylashtirish uchun
-Loyihaga yangi activity qo‘shilganda loyihaga qanday o‘zgartirish kiritish lozim?
-yangi activity haqidagi ma’lumotni loyihaning AndroidManifest fayliga qo‘shish lozim
-bu yangi loyiha yaratilganligini bildiradi
-emulyator ni ishga tushirish kerak
-loyiha uchun MultiActivity SDK dasturini yuklab olish va sozlash lozim
-Android ilovalarida asosan qanday menyular mavjud?
-Option menu, Context menu, Popup menu
-Grid menu, Option menu, Popup menu
-Layout menu, Grid menu, Option menu
-Context menu, Grid menu, Context menu
-Android ilovalari garafik interfeysida rang qiymati to’g’ri o’rnatilgan javobni belgilang
-android:textColor="#152FBF"
-android:textSize="25dp"
-android:textColor="152FBF"
-android:color="black"
-Adapter interfeysi nima uchun ishlatiladi?
-resurs va komponentalar o‘rtasidagi bog‘liqlikni ta’minlab beradi
-bunday interfeysdan foydalanib bo‘lmaydi chunki u abstrakt
-Android SDK versiyalari o‘rtasida bog‘liklikni amalga oshiradi
-mobil qurilmaga qo‘shimcha ma’lumot yuklash uchun portlarni aktivlashtiradi
-Content Provider nima?
-Android ilovalarida paketlararo ma’lumot almashish uchun ishlatiladi
-Android ilovalarida internetga ulanishni ta’minlaydi
-Ilovalarda internet provayderlarga bog‘lanish protokollar paketi
-Ilovalar uchun ma’lumotlar bazasini boshqarish tizimi
-Quyida keltirilgan qaysi javobda faqat AdapterView komponentalari joylashgan?
-ListView, GridView, SpinnerView
-ListAdapter, GridView, Gallery
-ArrayAdapter, ListAdapter, CursorAdapter
-ListAdapter, SpinnerAdapter, GridView
-Android ilovalarida ma’lumotlar bazasi bilan ishlashda Cursor sinfi nima uchun ishlatiladi?
-Ma’lumotlar bazasidagi jadvallardan satr ma’lumotlarini o‘qish uchun
-Ma’lumotlar bazasidagi jadvallardan ustun ma’lumotlarini o‘qish uchun
-Ma’lumotlar bazasiga bog‘lanishni tashkil qilish uchun
-Ma’lumotlar bazasidagi jadvallar ma’lumotlarini o‘zgartirish uchun
-ImageView img; Mazkur rasmni o‘ziga o‘zlashtiruvchi “img” obyektiga qaysi metod orqali animatsiya o‘rnatish mumkin?
-img.startAnimation(animationObject)
-img.setAnimation(animationObject)
-img.showAnimation(animationObject)
-ImageView::setAnimation(img.animationObject)
-Android Studioda sozlanmalarga tezkor kirish uchun qaysi tugmachalar birgalikda bosiladi?
-Ctrl + Alt + S
-Ctrl + Alt + Del
-Alt + F4
-Ctrl + F1
-android:layout_below="@+id/imageView"  ushbu buyruq qanday amalni bajaradi?
-Kiritiladigan komponentalarni imageView komponentasidan keyin (pastki qismdan) joylashtiradi.
-Kiritiladigan komponentalarni imageView komponentasiga rasm ko‘rinishida joylashtiradi.
-imageView komponentasiga nom beradi.
-Kiritiladigan komponentani imageView komponentasiga almashtiradi.
-Android Studio dasturida asosan ranglari bilan ishlovchi .xml fayli qaysi?
-colors.xml
-strings.xml
-button.xml
-manifest.xml
-…-dastur birinchi marta ishga tushganda activity ni  chaqiradi.
-onCreate()
-onStart()
-onResume()
-onPause()
-Tasvirlarni qayerga joylashtirish kerak?
-drawable papkasiga
-layout papkasiga
-java papkasiga
-values papkasiga
-Androdi Studioda stillar qayerda saqlanadi
-res papkasidagi fayllarda
-layout papkasidagi fayllarda
-java papkasidagi fayllarda
-drawable papkasidagi fayllarda
-Mobil dasturlashda Android ilovalar uchun asosan qaysi dizayn kutubxonasi ishlatiladi?
-Material
-Cupertino
-Arduino
-Bootstrap
-Android Studioda iOS uchun ham dastur yozishga qanday talablar mavjud?
-Flutter plaginini o‘rnatish kerak
-Maxsus emulyator kerak bo‘ladi
-Web interpretator o‘rnatish kerak
-React JS generatorini ulash kerak
-onCreateOptionsMenu()metodi qachon ishlatiladi?
-ilovalarda Option menu yaratilayotganda
-ilovalarda Layout menu yaratilayotganda
-ilovalarda Context menu yaratilayotganda
-ilovalarda Grid menu yaratilayotganda
-LinearLayout ning qaysi atributi orqali komponentalarni bitta qatorga (gorizontal) yoki ustun (vertikal)ga joylashtirish mumkin?
-android:orientation
-android:layout_width
-android:layout_height
-android:layout_alignParentTop
-MainActivity.java faylidagi "button" ga murojaat qilishda activity_main.xml da qanday kod yoziladi?
-android: id = "@ + id / button"
-android: layout_width = "wrap_content"
-android: layout_below = "@ + id / editText"
-android: text = "Tugma"
-Boshqa dasturlarning ma'lumotlari va xizmatlaridan foydalanish uchun qaysi faylda foydalanuvchi ruxsat elementini qo'shishi talab etiladi
-AndroidManifest.xml
-Manifest.xml
-Android.xml
-MainActivity.xml
-Toast sinfining maqsadi nima?
-xabarnoma ko‘rsatish. (ma'lum vaqtdan keyin ekrandan yo'qoladi)
-menyu yaratish sifatida ishlatiladi
-Xabarni saqlash uchun
-Ma'lumotlar saralash uchun ishlatiladi
-android:layout_width atributiga qanday qiymatlar berish mumkin?
-wrap_content, match_parent
-match_parent, manfiy sonlar
-wrap_content, haqiqiy sonlar
-faqat haqiqiy sonlar
-Android Studioda qancha virtual qurilma qo'shish mumkin?
-Siz cheklanmagan miqdorda qo'shishingiz mumkin
-5 dan oshmasligi kerak
-10 dan oshmasligi kerak
-10 dan oshmasligi kerak
-1 dan 3 gacha
-LinearLayout bu-…
-komponentalarni bitta qatorga (gorizontal) yoki ustun (vertikal)ga joylashtirish uchun ishlatiladi.
-komponentalarning jadval asosida joylashtiradi.
-bu komponentalarni ma’lum o‘lchamlar va oraliqlar asosida joylashtirish imkoniyatini yaratadi.
-Menyuni tanlanadi, Ma'lumotlarni o‘chirishga o‘tiladi va tugmani bosiladi.
-Quyidagi berilgan kod qismi qanday element qoʼyish uchun ishlatiladi?
+<html>AlertDialog bu:<br>*A)sarlavha, 3 tagacha tugma, qiymatlarni belgilash va tanlash mumkin bo‘lgan ro‘yhatdan iborat
+dialog oynasi<br>B)shaxsiy dialog oynasini yaratish uchun konteyner<br>C)joriy sana va vaqtni belgilab beruvchi dialog
+oynasi<br>D)joriy sana va vaqtni belgilab beruvchi dialog oynasi
+qandaydir jarayonni ko‘rsatib beruvchi dialog oynasi<br><br>#####################<br>Ilova internet xizmatidan foydalana
+olishi uchun AndroidManifest.xml fayliga qanday kod qismi qo‘shilishi kerak?<br>*A)uses-permission
+android:name=”android.permission.INTERNET”<br>B)uses-permission android:name=”android.usingpermission.INTERNET”<br>C)uses-allow
+android:name=”android.allow.INTERNET”<br>D)uses-request android:name=”android.allow.INTERNET”<br><br>#####################<br>Image
+(Imageview) komponentasi qanday maqsadda ishlatiladi?<br>*A)Rasmlarni joylashtirish uchun<br>B)Ma’lumotlarni jadval
+ko‘rinishida chop etish uchun<br>C)Audioma’lumotlarni joylashtirish uchun<br>D)Matnli ma’lumotlarni joylashtirish
+uchun<br><br>#####################<br>Loyihaga yangi activity qo‘shilganda loyihaga qanday o‘zgartirish kiritish
+lozim?<br>*A)yangi activity haqidagi ma’lumotni loyihaning AndroidManifest fayliga qo‘shish lozim<br>B)bu yangi loyiha
+yaratilganligini bildiradi<br>C)emulyator ni ishga tushirish kerak<br>D)loyiha uchun MultiActivity SDK dasturini yuklab
+olish va sozlash lozim<br><br>#####################<br>Android ilovalarida asosan qanday menyular mavjud?<br>*A)Option
+menu, Context menu, Popup menu<br>B)Grid menu, Option menu, Popup menu<br>C)Layout menu, Grid menu, Option menu<br>D)Context
+menu, Grid menu, Context menu<br><br>#####################<br>Android ilovalari garafik interfeysida rang qiymati
+to’g’ri o’rnatilgan javobni belgilang<br>*A)android:textColor="#152FBF"<br>B)android:textSize="25dp"<br>C)android:textColor="152FBF"<br>D)android:color="black"<br><br>#####################<br>Adapter
+interfeysi nima uchun ishlatiladi?<br>*A)resurs va komponentalar o‘rtasidagi bog‘liqlikni ta’minlab beradi<br>B)bunday
+interfeysdan foydalanib bo‘lmaydi chunki u abstrakt<br>C)Android SDK versiyalari o‘rtasida bog‘liklikni amalga
+oshiradi<br>D)mobil qurilmaga qo‘shimcha ma’lumot yuklash uchun portlarni
+aktivlashtiradi<br><br>#####################<br>Content Provider nima?<br>*A)Android ilovalarida paketlararo ma’lumot
+almashish uchun ishlatiladi<br>B)Android ilovalarida internetga ulanishni ta’minlaydi<br>C)Ilovalarda internet
+provayderlarga bog‘lanish protokollar paketi<br>D)Ilovalar uchun ma’lumotlar bazasini boshqarish tizimi<br><br>#####################<br>Quyida
+keltirilgan qaysi javobda faqat AdapterView komponentalari joylashgan?<br>*A)ListView, GridView, SpinnerView<br>B)ListAdapter,
+GridView, Gallery<br>C)ArrayAdapter, ListAdapter, CursorAdapter<br>D)ListAdapter, SpinnerAdapter, GridView<br><br>#####################<br>Android
+ilovalarida ma’lumotlar bazasi bilan ishlashda Cursor sinfi nima uchun ishlatiladi?<br>*A)Ma’lumotlar bazasidagi
+jadvallardan satr ma’lumotlarini o‘qish uchun<br>B)Ma’lumotlar bazasidagi jadvallardan ustun ma’lumotlarini o‘qish uchun<br>C)Ma’lumotlar
+bazasiga bog‘lanishni tashkil qilish uchun<br>D)Ma’lumotlar bazasidagi jadvallar ma’lumotlarini o‘zgartirish
+uchun<br><br>#####################<br>ImageView img; Mazkur rasmni o‘ziga o‘zlashtiruvchi “img” obyektiga qaysi metod
+orqali animatsiya o‘rnatish mumkin?<br>*A)img.startAnimation(animationObject)<br>B)img.setAnimation(animationObject)<br>C)img.showAnimation(animationObject)<br>D)ImageView::setAnimation(img.animationObject)<br><br>#####################<br>Android
+Studioda sozlanmalarga tezkor kirish uchun qaysi tugmachalar birgalikda bosiladi?<br>*A)Ctrl + Alt + S<br>B)Ctrl + Alt +
+Del<br>C)Alt + F4<br>D)Ctrl + F1<br><br>#####################<br>android:layout_below="@+id/imageView" ushbu buyruq
+qanday amalni bajaradi?<br>*A)Kiritiladigan komponentalarni imageView komponentasidan keyin (pastki qismdan)
+joylashtiradi.<br>B)Kiritiladigan komponentalarni imageView komponentasiga rasm ko‘rinishida joylashtiradi.<br>C)imageView
+komponentasiga nom beradi.<br>D)Kiritiladigan komponentani imageView komponentasiga almashtiradi.<br><br>#####################<br>Android
+Studio dasturida asosan ranglari bilan ishlovchi .xml fayli qaysi?<br>*A)colors.xml<br>B)strings.xml<br>C)button.xml<br>D)manifest.xml<br><br>#####################<br>…-dastur
+birinchi marta ishga tushganda activity ni chaqiradi.<br>*A)onCreate()<br>B)onStart()<br>C)onResume()<br>D)onPause()<br><br>#####################<br>Tasvirlarni
+qayerga joylashtirish kerak?<br>*A)drawable papkasiga<br>B)layout papkasiga<br>C)java papkasiga<br>D)values
+papkasiga<br><br>#####################<br>Androdi Studioda stillar qayerda saqlanadi<br>*A)res papkasidagi fayllarda<br>B)layout
+papkasidagi fayllarda<br>C)java papkasidagi fayllarda<br>D)drawable papkasidagi
+fayllarda<br><br>#####################<br>Mobil dasturlashda Android ilovalar uchun asosan qaysi dizayn kutubxonasi
+ishlatiladi?<br>*A)Material<br>B)Cupertino<br>C)Arduino<br>D)Bootstrap<br><br>#####################<br>Android Studioda
+iOS uchun ham dastur yozishga qanday talablar mavjud?<br>*A)Flutter plaginini o‘rnatish kerak<br>B)Maxsus emulyator
+kerak bo‘ladi<br>C)Web interpretator o‘rnatish kerak<br>D)React JS generatorini ulash kerak<br><br>#####################<br>onCreateOptionsMenu()metodi
+qachon ishlatiladi?<br>*A)ilovalarda Option menu yaratilayotganda<br>B)ilovalarda Layout menu yaratilayotganda<br>C)ilovalarda
+Context menu yaratilayotganda<br>D)ilovalarda Grid menu yaratilayotganda<br><br>#####################<br>LinearLayout
+ning qaysi atributi orqali komponentalarni bitta qatorga (gorizontal) yoki ustun (vertikal)ga joylashtirish mumkin?<br>*A)android:orientation<br>B)android:layout_width<br>C)android:layout_height<br>D)android:layout_alignParentTop<br><br>#####################<br>MainActivity.java
+faylidagi "button" ga murojaat qilishda activity_main.xml da qanday kod yoziladi?<br>*A)android: id = "@ + id /
+button"<br>B)android: layout_width = "wrap_content"<br>C)android: layout_below = "@ + id / editText"<br>D)android: text
+= "Tugma"<br><br>#####################<br>Boshqa dasturlarning ma'lumotlari va xizmatlaridan foydalanish uchun qaysi
+faylda foydalanuvchi ruxsat elementini qo'shishi talab etiladi<br>*A)AndroidManifest.xml<br>B)Manifest.xml<br>C)Android.xml<br>D)MainActivity.xml<br><br>#####################<br>Toast
+sinfining maqsadi nima?<br>*A)xabarnoma ko‘rsatish. (ma'lum vaqtdan keyin ekrandan yo'qoladi)<br>B)menyu yaratish
+sifatida ishlatiladi<br>C)Xabarni saqlash uchun<br>D)Ma'lumotlar saralash uchun ishlatiladi<br><br>#####################<br>android:layout_width
+atributiga qanday qiymatlar berish mumkin?<br>*A)wrap_content, match_parent<br>B)match_parent, manfiy sonlar<br>C)wrap_content,
+haqiqiy sonlar<br>D)faqat haqiqiy sonlar<br><br>#####################<br>Android Studioda qancha virtual qurilma
+qo'shish mumkin?<br>*A)Siz cheklanmagan miqdorda qo'shishingiz mumkin<br>B)5 dan oshmasligi kerak<br>C)10 dan oshmasligi
+kerak
+10 dan oshmasligi kerak<br>D)1 dan 3 gacha<br><br>#####################<br>LinearLayout bu-…<br>*A)komponentalarni bitta
+qatorga (gorizontal) yoki ustun (vertikal)ga joylashtirish uchun ishlatiladi.<br>B)komponentalarning jadval asosida
+joylashtiradi.<br>C)bu komponentalarni ma’lum o‘lchamlar va oraliqlar asosida joylashtirish imkoniyatini yaratadi.<br>D)Menyuni
+tanlanadi, Ma'lumotlarni o‘chirishga o‘tiladi va tugmani bosiladi.<br><br>#####################<br>Quyidagi berilgan kod
+qismi qanday element qoʼyish uchun ishlatiladi?
 (Button android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:text="Notification"
 android:layout_centerInParent="true"
-android:id="@+id/btn_notification")
-Button
-TextView
-Notification
-Bildirishnoma
-GridView komponentasi nima uchun ishlatiladi?
-ImageView bilan birgalikda rasmlarni ekranga ikki o‘lchovli grid ko‘rinishida hosil qilish uchun
-barcha komponentalarni jadval ko‘rinishda joylashtirish uchun
-galeriyadagi rasmlarni ekranda ko‘rsatish uchun
-matnlarni ekranga gorizontal yoki vertikal joylashtirish uchun
-RelativeLayout komponentalarni qanday ko‘rinishda joylashtiradi?
-komponentalarni bir-biriga bog‘liq holda
-gorizontal yoki vertikal holatda
-komponentalarni bir-biriga bog‘liq yoki vertikal holatda
-ekranning x va y koordinatalari bo‘yicha
-EditText komponentasi ishlatilganda o’chib ketadigan soʼz kiritish uchun qanday attributdan foydalaniladi?
-hint
-text
-colortext
-textsize
-Ushbu xususiyat nima qiladi? android:backgroundTint = "@android:color/holo_green_light"
-Obyektning orqa fonini o'rnatadi
-Matn rangini belgilaydi
-Matnning fonini o'rnatadi
-Obyektning soyasini o'rnatadi
-Android Studioda Button tugmasi bosilganda Buttonni ishga tushuruvchi buyruq to‘g‘ri keltirilgan qatorni toping?
-android:onClick
-android: text
-android:textStyle
-android: textcolor
-Ma’lumotlar bazasi bilan ishlashda muxim bo’lgan sinflarni belgilang
-ContentValues, SQLiteDatabase, Cursor
-ContentValues, SQLiteDatabase, MainActivity
-NotificationManager, SQLiteDatabase, MainActivity
-Cursor, ContentValues, MainActivity
-onPause() metodi qanday holatda ishga tushadi?
-joriy activity faoliyati vaqtinchalik to‘xtatilib boshqa activity faollashtirilganda chaqiriladi
-activity natijasi foydalanuvchiga ko‘ringanda chaqiriladi
-activity foydalanuvchiga ko‘rinmay qolganida chaqiriladi
-activity to‘xtatilgan vaqtda chaqiriladi
-Quyidagilardan qaysi biri mobil dasturlash freymvorki hisoblanadi?
-Barcha javoblar to‘g‘ri
-Python Kivy
-React Native
-Dart Flutter
-Bildirishnoma(Notification)lar bilan ishlashda muxim bo’lgan sinflarni belgilang
-NotificationChannel, NotificationManager, NotificationCompat
-AppCompatActivity, NotificationManager, NotificationCompat
-NotificationChannel, NotificationManager, MainActivity
-Notification, MainActivity, AppCompatActivity
-DialogFragment bu:
-shaxsiy dialog oynasini yaratish uchun konteyner
-qandaydir jarayonni ko‘rsatib beruvchi dialog oynasi
-sarlavha, 3 tagacha tugma, qiymatlarni belgilash va tanlash mumkin bo‘lgan ro‘yhatdan iborat dialog oynasi
-joriy sana va vaqtni belgilab beruvchi dialog oynasi
-Bildirishnoma(Notification)ni tashkil etuvchilar to’g’ri ko’rsatilgan qatorni belgilang
-sarlavha (Header) maydoni, tarkib (Content) maydoni, harakat (Action) maydoni
-sarlavha (Header) maydoni, tarkib (Content) maydoni, ma’lumotlar bazasi (database) maydoni
-sarlavha (Header) maydoni, harakat (Action) maydoni, ma’lumotlar bazasi (database) maydoni
-tarkib (Content) maydoni, harakat (Action) maydoni, ma’lumotlar bazasi (database) maydoni
-Android Studiodagi Android Virtual Device qanday vazifani bajaradi?
-Emulyator yoki telefonsiz dasturni ishlatib ko‘rish imkoniyatini beradi
-Yozilgan dasturni sintaktik tahlil qiladi
-Github bilan sinxronizatsiyani ta’minlaydi
-To‘g‘ri javob yo‘q
-Button tugmasini ekranning chap qismidan joylashtirish uchun qaysi atributdan foydalaniladi?
-android:layout_ alignLeft
-android:layout_centerHorizontal
-android:onClick
-android:layout_ alignTop
-…- activity natijasi foydalanuvchiga ko‘ringanda chaqiriladi.
-onStart()
-onCreate()
-onResume()
-onPause()
-onCreate() metodi qanday holatda ishga tushadi?
-activity ishga tushganda birinchi chaqiriladigan metod
-loyiha to‘xtab turgan vaqtda chaqiriladi
-activity foydalanuvchiga ko‘rinmay qolganida chaqiriladi
-activity natijasi foydalanuvchiga ko‘ringanda chaqiriladi
-…- joriy activity faoliyati vaqtinchalik to‘xtatilib boshqa activity faollashtirilganda chaqiriladi.
-onPause()
-onStart()
-onResume()
-onCreate()
-Android Studioda muharrir uchun mavzu (rang sxemalari) ni sozlash ketma-ketligi qanday?
-File » Settings » Editor » Color Scheme
-File » Settings » Editor » Font » Size
-File » Settings » Editor » Font » Line spacing
-File » New » Import Project
-Ob’yektni element idsiga bog’lashda qanday metoddan foydalaniladi?
-findViewById()
-findById()
-findViewId()
-FindViewID()
-Quyida layout lar to‘g‘ri ko‘rsatilgan javobni aniqlang
-LianerLayout, RelativeLayout, TableLayout, FrameLayout
-ImageView, RelativeLayout, TableLayout, ButtonLayout
-LinearLayout, ImageView, ButtonLayout, GridLayout
-Gridlayout, TableLayout, AbsoluteLayout, ButtonLayout
-Android dasturlarida EditText komponentani (misol uchun ushbu komponenta id si "edittext1"ga teng)id bo‘yicha to‘g‘ri chaqirilgan javobni ko‘rsating?
-R.id.edittext1
-R.layout.id[edittext1]
-R.res.id.edittext1
-R.layout.edittext1
-setContentView() metodidan to'g'ri foydalanilgan javobni belgilang?
-setContentView(R.layout.xmlfilename)
-app.setContentView()
-setContentView(R.app.layout)
-app.setContentView(R.layout.xmlfilename)
-Androidda Google Maps ximatidan foydalanish uchun qaysi kutubxonadan foydalaniladi?
-android.gms.maps.MapFragment
-gooogle.android.Fragment
-android.gms. AppFragment
-androidx.appcompat. AppCompatActivity
-CheckBox belgilanganda qaysi atribut True qiymatga ega bo‘ladi?
-Checked
-onpress
-clicked
-style
-Android XML da elementga (obyekt) nom berish uchun qaysi atributga murojaat qilinadi?
-text
-width
-height
-color
-Quyidagi berilgan kod qismi qanday element qoʼyish uchun ishlatiladi? (EditText
+android:id="@+id/btn_notification")<br>*A)Button<br>B)TextView<br>C)Notification<br>D)Bildirishnoma<br><br>#####################<br>GridView
+komponentasi nima uchun ishlatiladi?<br>*A)ImageView bilan birgalikda rasmlarni ekranga ikki o‘lchovli grid ko‘rinishida
+hosil qilish uchun<br>B)barcha komponentalarni jadval ko‘rinishda joylashtirish uchun<br>C)galeriyadagi rasmlarni
+ekranda ko‘rsatish uchun<br>D)matnlarni ekranga gorizontal yoki vertikal joylashtirish uchun<br><br>#####################<br>RelativeLayout
+komponentalarni qanday ko‘rinishda joylashtiradi?<br>*A)komponentalarni bir-biriga bog‘liq holda<br>B)gorizontal yoki
+vertikal holatda<br>C)komponentalarni bir-biriga bog‘liq yoki vertikal holatda<br>D)ekranning x va y koordinatalari
+bo‘yicha<br><br>#####################<br>EditText komponentasi ishlatilganda o’chib ketadigan soʼz kiritish uchun qanday
+attributdan foydalaniladi?<br>*A)hint<br>B)text<br>C)colortext<br>D)textsize<br><br>#####################<br>Ushbu
+xususiyat nima qiladi? android:backgroundTint = "@android:color/holo_green_light"<br>*A)Obyektning orqa fonini o'rnatadi<br>B)Matn
+rangini belgilaydi<br>C)Matnning fonini o'rnatadi<br>D)Obyektning soyasini o'rnatadi<br><br>#####################<br>Android
+Studioda Button tugmasi bosilganda Buttonni ishga tushuruvchi buyruq to‘g‘ri keltirilgan qatorni toping?<br>*A)android:onClick<br>B)android:
+text<br>C)android:textStyle<br>D)android: textcolor<br><br>#####################<br>Ma’lumotlar bazasi bilan ishlashda
+muxim bo’lgan sinflarni belgilang<br>*A)ContentValues, SQLiteDatabase, Cursor<br>B)ContentValues, SQLiteDatabase,
+MainActivity<br>C)NotificationManager, SQLiteDatabase, MainActivity<br>D)Cursor, ContentValues, MainActivity<br><br>#####################<br>onPause()
+metodi qanday holatda ishga tushadi?<br>*A)joriy activity faoliyati vaqtinchalik to‘xtatilib boshqa activity
+faollashtirilganda chaqiriladi<br>B)activity natijasi foydalanuvchiga ko‘ringanda chaqiriladi<br>C)activity
+foydalanuvchiga ko‘rinmay qolganida chaqiriladi<br>D)activity to‘xtatilgan vaqtda chaqiriladi<br><br>#####################<br>Quyidagilardan
+qaysi biri mobil dasturlash freymvorki hisoblanadi?<br>*A)Barcha javoblar to‘g‘ri<br>B)Python Kivy<br>C)React Native<br>D)Dart
+Flutter<br><br>#####################<br>Bildirishnoma(Notification)lar bilan ishlashda muxim bo’lgan sinflarni belgilang<br>*A)NotificationChannel,
+NotificationManager, NotificationCompat<br>B)AppCompatActivity, NotificationManager, NotificationCompat<br>C)NotificationChannel,
+NotificationManager, MainActivity<br>D)Notification, MainActivity, AppCompatActivity<br><br>#####################<br>DialogFragment
+bu:<br>*A)shaxsiy dialog oynasini yaratish uchun konteyner<br>B)qandaydir jarayonni ko‘rsatib beruvchi dialog oynasi<br>C)sarlavha,
+3 tagacha tugma, qiymatlarni belgilash va tanlash mumkin bo‘lgan ro‘yhatdan iborat dialog oynasi<br>D)joriy sana va
+vaqtni belgilab beruvchi dialog oynasi<br><br>#####################<br>Bildirishnoma(Notification)ni tashkil etuvchilar
+to’g’ri ko’rsatilgan qatorni belgilang<br>*A)sarlavha (Header) maydoni, tarkib (Content) maydoni, harakat (Action)
+maydoni<br>B)sarlavha (Header) maydoni, tarkib (Content) maydoni, ma’lumotlar bazasi (database) maydoni<br>C)sarlavha
+(Header) maydoni, harakat (Action) maydoni, ma’lumotlar bazasi (database) maydoni<br>D)tarkib (Content) maydoni, harakat
+(Action) maydoni, ma’lumotlar bazasi (database) maydoni<br><br>#####################<br>Android Studiodagi Android
+Virtual Device qanday vazifani bajaradi?<br>*A)Emulyator yoki telefonsiz dasturni ishlatib ko‘rish imkoniyatini
+beradi<br>B)Yozilgan dasturni sintaktik tahlil qiladi<br>C)Github bilan sinxronizatsiyani ta’minlaydi<br>D)To‘g‘ri javob
+yo‘q<br><br>#####################<br>Button tugmasini ekranning chap qismidan joylashtirish uchun qaysi atributdan
+foydalaniladi?<br>*A)android:layout_ alignLeft<br>B)android:layout_centerHorizontal<br>C)android:onClick<br>D)android:layout_
+alignTop<br><br>#####################<br>…- activity natijasi foydalanuvchiga ko‘ringanda
+chaqiriladi.<br>*A)onStart()<br>B)onCreate()<br>C)onResume()<br>D)onPause()<br><br>#####################<br>onCreate()
+metodi qanday holatda ishga tushadi?<br>*A)activity ishga tushganda birinchi chaqiriladigan metod<br>B)loyiha to‘xtab
+turgan vaqtda chaqiriladi<br>C)activity foydalanuvchiga ko‘rinmay qolganida chaqiriladi<br>D)activity natijasi
+foydalanuvchiga ko‘ringanda chaqiriladi<br><br>#####################<br>…- joriy activity faoliyati vaqtinchalik
+to‘xtatilib boshqa activity faollashtirilganda chaqiriladi.<br>*A)onPause()<br>B)onStart()<br>C)onResume()<br>D)onCreate()<br><br>#####################<br>Android
+Studioda muharrir uchun mavzu (rang sxemalari) ni sozlash ketma-ketligi qanday?<br>*A)File » Settings » Editor » Color
+Scheme<br>B)File » Settings » Editor » Font » Size<br>C)File » Settings » Editor » Font » Line spacing<br>D)File » New »
+Import Project<br><br>#####################<br>Ob’yektni element idsiga bog’lashda qanday metoddan foydalaniladi?<br>*A)findViewById()<br>B)findById()<br>C)findViewId()<br>D)FindViewID()<br><br>#####################<br>Quyida
+layout lar to‘g‘ri ko‘rsatilgan javobni aniqlang<br>*A)LianerLayout, RelativeLayout, TableLayout, FrameLayout<br>B)ImageView,
+RelativeLayout, TableLayout, ButtonLayout<br>C)LinearLayout, ImageView, ButtonLayout, GridLayout<br>D)Gridlayout,
+TableLayout, AbsoluteLayout, ButtonLayout<br><br>#####################<br>Android dasturlarida EditText komponentani
+(misol uchun ushbu komponenta id si "edittext1"ga teng)id bo‘yicha to‘g‘ri chaqirilgan javobni ko‘rsating?<br>*A)R.id.edittext1<br>B)R.layout.id[edittext1]<br>C)R.res.id.edittext1<br>D)R.layout.edittext1<br><br>#####################<br>setContentView()
+metodidan to'g'ri foydalanilgan javobni
+belgilang?<br>*A)setContentView(R.layout.xmlfilename)<br>B)app.setContentView()<br>C)setContentView(R.app.layout)<br>D)app.setContentView(R.layout.xmlfilename)<br><br>#####################<br>Androidda
+Google Maps ximatidan foydalanish uchun qaysi kutubxonadan foydalaniladi?<br>*A)android.gms.maps.MapFragment<br>B)gooogle.android.Fragment<br>C)android.gms.
+AppFragment<br>D)androidx.appcompat. AppCompatActivity<br><br>#####################<br>CheckBox belgilanganda qaysi
+atribut True qiymatga ega bo‘ladi?<br>*A)Checked<br>B)onpress<br>C)clicked<br>D)style<br><br>#####################<br>Android
+XML da elementga (obyekt) nom berish uchun qaysi atributga murojaat qilinadi?<br>*A)text<br>B)width<br>C)height<br>D)color<br><br>#####################<br>Quyidagi
+berilgan kod qismi qanday element qoʼyish uchun ishlatiladi? (EditText
 android:id="@+id/matn"
 android:layout_width="100dp"
-android:layout_height="wrap_content")
-EditText
-Text
-Matn
-Rasm
-Android Studio da java kodlari bilan ishlovchi fayl qaysi qatorda keltirilgan?
-MainActivity.java
-Strings.kt
-AndroidButton.xml
-AndroidManifest.xml
-Android Studioda kiritilgan matn o‘lchamini o‘gartirish uchun qaysi atributdan foydalaniladi?
-android:textSize="25dp "
-android:textColor="#ffff"
-android:text="black"
-android:textStyle="bold "
-CheckBox sinfining asosiy usullari qanday?
-public boolean isChecked (), public void setChecked (boolean status)
-public string getText (), public void toString ()
-public void makeText (), public void getApplicationContext ()
-public void getBoxId (), public void show ()
-…- activity to‘xtatilgan vaqtda chaqiriladi.
-onRestart()
-onStart()
-onCreate()
-onPause()
-Android Studioda yangi loyiha yaratildi. Ushbu yaratilgan loyiha ichida avtomatik hosil bo‘lgan res papkasida nimalar joylashadi?
-loyihaga tegishli resurslar (layout, string, style va h.k.lar)
-asosiy java fayllar
-AndroidManifest.xml fayli joylashadi
-Loyihaning asosiy activity fayllari
-Label vazifasini bajaruvchi komponentalar nomlari berilgan qatorni ko‘rsating?
-TextView
-Button, Checkbox
-Radio, Grid
-Table, DataTable
-…- activity to‘xtatilgan vaqtda chaqiriladi.
-onDestroy()
-onPause()
-onRestart()
-onStop()
-Android Studioda ilovalar qaysi dasturlash tilida ishlab chiqiladi?
-Java, Kotlin, Dart
-Swift
-Faqat Dart
-Faqat Java
-…– bu komponentalarni ma’lum o‘lchamlar va oraliqlar asosida joylashtirish imkoniyatini yaratadi.
-AbsoluteLayout
-LinearLayout
-FrameLayout
-TableLayout
-Matn qalinligini sozlash uchun qaysi atributga qiymat beriladi?
-android:textStyle
-android: text
-android: textcolor
-android: id
-Android Studioda kiritilgan matnni kursiv ko‘rinishiga o‘tkazish qaysi buyrug‘i to‘g‘ri kiritilgan qatorni belgilang?
-android:textStyle="italic "
-android:textColor="#ffff"
-android:text="black"
-android:textStyle="bold "
-MainActivity.java faylidagi "TextView" ga matn kiritish uchun activity_main.xml da qanday kod yoziladi?
-android: text = "Salom"
-android: layout_width = "wrap_content"
-android: layout_below = "@ + id / TextView "
-android: id = "@ + id /Salom "
-Android Studioda CheckBox tugmasini aktiv holati to‘g‘ri keltirilgan qatorni belgilang?
-android:checked="true"
-android: text="CheckBox"
-android:textAlignment="center"
-android:checked="false"
-Ma'lumotlar manzili (path) nima uchun ishlatiladi?
-Chaqirilgan resursning local/global adresini ko‘rsatish uchun
-Video formatini sozlash uchun
-Fayl toifasini haqida xabar berish uchun
-Ekran o‘lchamiga moslashish uchun
-CheckBox nima?
-bu maxsus turdagi button va ikkita holatda bo‘lishi mumkin: belgilangan yoki belgilanmagan.
-tugmachaga o‘xshash vidjet bo‘lib, unda rasm tugma sifatida ishlatilishi mumkin
-tekshirilgan / tekshirilmagan ko‘rsatkich turi
-tugmachadir va bu tugma bosilganda ma'lum bir operatsiya amalga oshiriladi.
-Android Studioda quyidagi qaysi platformalar uchun dasturlar yozish mumkin?
-Android va iOS, iOS uchun Flutter plaginini o‘rnatib yozish mumkin
-Faqat Android
-Faqat iOS
-Symbian
-Quyidagi berilgan kod qismi qanday element qoʼyish uchun ishlatiladi? (ProgressBar android:id=”@+id/Progress” android:layout_width=”wrap_content” android:layout_height=”wrap_content”)
-ProgressBar
-TextView
-Progress
-Jarayon
-onDestroy() metodi qanday holatda ishga tushadi?
-activity to‘xtatilgan vaqtda chaqiriladi
-activity foydalanuvchiga ko‘rinmay qolganida chaqiriladi
-activity natijasi foydalanuvchiga ko‘ringanda chaqiriladi
-joriy activity faoliyati vaqtinchalik to‘xtatilib boshqa activity faollashtirilganda chaqiriladi
-RelativeLayoutda layout_toRightOf atributi nimani bildiradi
-Layoutga elementni ko’rsatilgan idli elementning o’ng tarafiga joylashtiradi
-Layoutga elementni o’ng tarafda joylashtiradi
-Layoutga elementni ko’rsatilgan idli elementning o’ng tarafi va pastga joylashtiradi
-Layoutga elementni o’ng tarafi va pastga joylashtiradi
-wrap_content va match_parent qiymatlari qanday farqlanadi?
-match_parent qiymati butun ekran yoki Layout bo’ylab joylashishni bildiradi
-wrap_content qiymati butun ekran yoki Layout bo’ylab joylashishni bildiradi
-match_parent qiymati butun ekran yoki Layout bo’ylab markazga joylashishni bildiradi
-wrap_content qiymati butun ekran yoki Layout bo’ylab markazga joylashishni bildiradi
-Androidning Jelly Bean nomli turi qaysi qaysi versiyalar va API level ni o‘z ichiga oladi?
-Android 4.1, 4.2, 4.3 va 16-18 API level larni
-Jelly Bean versiyada API level mavjud emas
-Android 4.3, 4.4 va 18-19 API level larni
-Android 4.3, 4.4, 5.0 va 18-20 API level larni
-Ilova ma’lumotlarini avtomatik XML faylga saqlashda qanday obyektdan foydalaniladi?
-SharedPreferences obyekti orqali
-FileWriter obyekti orqali
-ilova ma’dumotlarini XML faylda saqlash imkoniyati yo‘q
-FileBuffer obyekti orqali
-Flutter freymvorki qaysi kompaniya tomonidan qo‘llab quvvatlanadi?
-Google
-Facebook
-Apple
-Yandex
-Button ustiga sichqoncha bilan bosilganda qaysi metod ishga tushadi?
-onPress (Pressed)
-onCheck (Checked)
-onChange(Changed)
-Bunday metod mavjud emas
-SQLite haqida quyidagilardan qaysi biri to‘g‘ri?
-Ma’lumotlar bazasini boshqarish tizimi
-Virtual server
-Android Studioning maxsus kutubxonasi
-Freymvork
-Android Studioda yaratilgan ilovani .apk formatga o‘tkazish ketma-ketligi qanday?
-Build » Build bundle » Build APK
-File » Open » Build APK
-Build » New » Build APK
-Build »  Import Project
-iOS uchun yozilgan kodni qanday qurilmada build qilish mumkin?
-Faqatgina MacOS o‘rnatilgan qurilmada
-Istalgan Linux o‘rnatilgan kompyuterda
-Windows 10 o‘rnatilgan kompyuterda
-Istalgan OT o‘rnatilgan qurilmada
-BaseAdapter sinfining voris sinflari qaysilar?
-ArrayAdapter, ListAdapter, SpinnerAdapter, CursorAdapter
-ListAdapter, SpinnerAdapter,ListView,GridView
-SpinnerAdapter, CursorAdapter, Spinner, Gallery
-ListView,GridView, SpinnerView, Gallery
-onStart() metodi qanday holatda ishga tushadi?
-activity natijasi foydalanuvchiga ko‘ringanda chaqiriladi
-activity ish faoliyati to‘xtatilib qayta ishga tushirilganida chiqariladi
-activity foydalanuvchi tomonidan ishlatilayotganda chaqiriladi
-activity foydalanuvchiga ko‘rinmay qolganida chaqiriladi
-onCreateContextMenu()metodi qachon ishlatiladi?
-ilovalarda Context menu yaratilayotganda
-ilovalarda Grid menu yaratilayotganda
-ilovalarda Option menu yaratilayotganda
-ilovalarda Layout menu yaratilayotganda
-Android Studioda ishlab chiqilgan mobil ilova loyihasida Git sozlanmalari qaysi faylda saqlanadi?
-.gitignore
-.packages
-.metadata
-android
-Android Studioda ImageView komponentasiga rasm kiritish buyrug‘i to‘g‘ri keltirilgan qatorni belgilang?
-android:src="@drawable/circle"
-android:id="@+id/imageView"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-Android operatsion tizimi uchun ilovalar ishlab chiqishda asosan qanday dasturlash tillaridan foydalaniladi?
-Java, Kotlin, Dart, C#, JavaScript
-Objective – C, Objective Pascal, Swift
-HTML5, CSS, JavaScript, Swift
-Faqat Java va Kotlin
-Android SDK kutubxonasida Google APIs nima uchun ishlatiladi?
-ilovalarda karta va GPS xizmatini boshqarish uchun
-ilovalarda karta xizmati va google qidiruv xizmatini boshqarish uchun
-ilovalarda GPS xizmatini boshqarish uchun
-ilovalarda google qidiruv xizmatini boshqarish uchun
-Android Studioda yangi plagin o‘rnatish ketma-ketligi qanday?
-File » Settings »Plugins » Search & Install
-File » Open
-File » New » New Project
-File » Close
-Explicit Intent va Implicit Intent o'rtasidagi asosiy farq nima?
-Explicit Intent faqat bitta activityga yo'naltirish uchun ishlatiladi, implicit Intent esa boshqaruvchi tizimning boshqa komponentlariga ham yo'naltirishga imkon beradi
-Explicit Intent faqat bitta xizmatga yo'naltirish uchun ishlatiladi, implicit Intent esa boshqaruvchi tizimning boshqa komponentlariga ham yo'naltirishga imkon beradi
-Explicit Intent faqat bitta fragmentga yo'naltirish uchun ishlatiladi, implicit Intent esa boshqaruvchi tizimning boshqa komponentlariga ham yo'naltirishga imkon beradi
-Explicit Intent faqat bitta sinfga yo'naltirish uchun ishlatiladi, implicit Intent esa boshqaruvchi tizimning boshqa komponentlariga ham yo'naltirishga imkon beradi
-Android ilovadarida ekranning to‘rtta burchagi hisobiga komponentalarni boshqarish nima deb ataladi?
-Anchoring
-Resizing and repositioning
-Display orientation
-RelativeLayout
-Sana bilan ishlovchi komponenta (Android Studio, Flutter) qanday nomlanadi?
-DatePicker
-Button
-Checkbox
-Radio
-startActivity() metodi nima uchun ishlatiladi?
-intent ob’ekti orqali chaqirilgan activityni ishga tushiradi
-joriy activity ni ishga tushirish uchun
-Android tizimida bunday metod mavjud emas
-joriy activity ni ish faoliyatini to‘xtatib qayta ishga tushiradi
-Android Studioda yangi Android loyiha yaratildi. Ushbu yaratilgan loyiha ichida avtomatik hosil bo‘lgan java papkasida nimalar joylashadi?
-asosiy activity fayllar
-loyiha interfeys fayllari
-AndroidManifest.xml fayli joylashadi
-loyihaga tegishli resurslar (layout, string, style va h.k.lar)
-Android dasturlari qaysi kengaytma bilan saqlanadi?
-.apk
-.cpp
-.txt
-.exe
-Android Studioda mavjud faylni ochish uchun qaysi buyruqdan foydalaniladi?
-Open (Ctrl + O)
-Run (Shift + F10)
-Debug (Shift + F9)
-Save (Ctrl + S)
-Android Studio dasturida asosan matnli ma’lumotlar bilan ishlovchi .xml fayli qaysi?
-strings.xml
-colors.xml
-button.xml
-manifest.xml
-JSON kengaytmasi qanday?
-JavaScript Object Notation
-Java Server Object Native
-JavaScript Object Native
-Java Server Object Notation
-Mobil ilova (masalan, birorta .apk kengaytmali fayl) ni kompyuterda ishlatish imkonini beruvchi dasturlar qanday nomlanadi?
-Emulyator
-Kompilyator
-Translator
-Editor
-onStop() metodi qanday holatda ishga tushadi?
-activity foydalanuvchiga ko‘rinmay qolganida chaqiriladi
-activity natijasi foydalanuvchiga ko‘ringanda chaqiriladi
-activity to‘xtatilgan vaqtda chaqiriladi
-joriy activity faoliyati vaqtinchalik to‘xtatilib boshqa activity faollashtirilganda chaqiriladi
-Android qaysi sabablarga ko‘ra Linuxga asoslanib yaratilgan?
-Barcha javoblar to‘g‘ri
-Xavfsizlik
-Portativlik
-Tarmoqlilik
-CheckBox foydalanuvchi interfeysida qanday  boshqaruv elementini ifodalaydi?
-Belgilash qismi mavjud bo'ladi
-Tugma bo'ladi
-Matn qiymati bo'ladi
-Radiobutton bo'ladi
-Kotlin tilida yozilgan kodlar qaysi faylda saqlanadi?
-.kt kengaytmali faylda
-.java kengaytmali faylda
-.xml kengaytmali faylda
-.json kengaytmali faylda
-LinearLayout va RelativeLayout orasidagi asosiy farq nima?
-LinearLayout elementlarni o'lchamlarga bo'lgan bog'liqlik bilan joylashtiradi, RelativeLayout esa elementlarni bir-biriga nisbatan joylashtiradi
-LinearLayout faqat bitta elementni joylashtirishga imkon beradi, RelativeLayout esa bir nechta elementni joylashtirishga imkon beradi
-LinearLayout elementlarni top_to_bottom tartibida joylashtiradi, RelativeLayout esa elementlarni left_to_right tartibida joylashtiradi
-LinearLayout elementlarni keskin tartibda joylashtiradi, RelativeLayout esa elementlarni o'lchamlarga bo'lgan bog'liqlik bilan joylashtiradi
-Qaysi variantda foydalanuvchi interfeysi elementlarini joylashtirishda layout turi xato ko'rsatilgan?
-APILayout
-LinearLayout
-RelativeLayout
-ConstraintLayout
-Intent obyekti yordamida foydalanuvchi boshqa tizimga yo'naltirishni sozlashda qaysi Intent turi ishlatiladi?
-Implicit Intent
-Explicit Intent
-Broadcast Intent
-Service Intent
-Java tilida yozilgan kodlar qaysi faylda saqlanadi?
-.java kengaytmali faylda
-.kt kengaytmali faylda
-.xml kengaytmali faylda
-.json kengaytmali faylda
-Androidda qaysi element ilovaga ma’lumot kiritish uchun qo’llaniladi?
-EditText
-TextView
-Button
-ImageView
-Intent obyektiga ma'lumotlar uzatish uchun qaysi metoddan foydalaniladi?
-putExtra()
-attachData()
-sendData()
-setData()
-ListView qanday maqsadga xizmat qiladi?
-Ro'yxat elementlarini ko'rsatish uchun
-Tabriklovchi xabarlarni namoyish etish uchun
-Ma'lumotlarni saqlash uchun
-Boshqa ilovalarga qo'llaniladigan komponentlarni ishga tushirish uchun
-Matnni o‘rtaga tekislash uchun textAlign atributiga qanday qiymat beriladi?
-center
-left
-right
-bottom
-Foydalanuvchi interfeysidagi rasmni ko'rsatish uchun qaysi elementdan foydalaniladi?
-ImageView
-ImageButton
-Button
-CheckBox
-Intent obyektini yaratish uchun qaysi metoddan foydalaniladi?
-createIntent()
-startActivity()
-startIntent()
-newIntent()
-Androidda foydalanuvchi interfeysi qaysi tillarda yoziladi?
-XML tilida
-Java tilida
-Python tilida
-C tilida
-Intent obyekti orqali qanday qilib bitta faylni jo'natish mumkin?
-putFile()
-putExtraFile()
-setDataAndType()
-setType()
-Androidda foydalanuvchi interfeysi elementlariga murojat qilish uchun qaysi XML atributi foydalaniladi?
-id
-layout_width
-background
-text
-Androidda foydalanuvchi interfeysi boshqaruv elementlari uchun stil kodlari qaysi faylda saqlanadi?
-XML fayllarida
-Java sinflarida
-Manifest fayllarida
-Gradle fayllarida
-Intent obyektini ishlatib, boshqa activityni boshqarish uchun qaysi metoddan foydalaniladi?
-startActivity()
-startActivityForResult()
-startService()
-startActivityIfNeeded()
-APIning kengaytmasi qanday ifodalanadi?
-Application Programming Interface
-Android Programming Interaction
-Application Programming Interaction
-Android Program Interface
-Komponentaning tashqi o‘ng chegarasidan bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?
-marginRight
-marginBottom
-marginLeft
-marginTop
-Androidda foydalanuvchi interfeysi (UI) nima uchun ishlatiladi?
-Foydalanuvchi bilan aloqada bo'lish uchun
-Ma'lumotlarni saqlash uchun
-Qo'llab-quvvatlash uchun
-Server qismga bog'lanish uchun
-Foydalanuvchi interfeysida elementlar orasidagi o'zaro tartiblash uchun qaysi element ishlatiladi?
-RelativeLayout
-LinearLayout
-ConstraintLayout
-GridLayout
-Foydalanuvchi interfeysidagi matnni shakllantirish va joylashish uchun qaysi elementdan foydalaniladi?
-TextView
-EditText
-Button
-CheckBox
-Intent obyektida qanday qilib Activityni to'xtatish mumkin?
-finishActivity()
-stopActivity()
-pauseActivity()
-cancelActivity()
-Foydalanuvchi interfeysi elementlari stilini belgilash uchun qaysi atributdan foydalaniladi?
-style
-layout
-theme
-design
-DatePickerdan qanday maqsadda foydalaniladi?
-Sana tanlash uchun oynachadan iborat
-Vaqtni tanlash uchun oynachadan iborat
-Matnning yuklanish vaqtini ko'rsatish uchun
-Matn qiymati bo'ladi
-AlertDialogdan qanday maqsadda foydalaniladi?
-Foydalanuvchiga xabar berish uchun
-Oynaning yonida belgilangan sahifalarga o'tish uchun
-Ma'lumotlarni qo'llab-quvvatlash uchun
-Boshqa ilovalarga qo'llaniladigan komponentlarni ishga tushirish uchun
-Foydalanuvchi interfeysi elementlarining o'lchamlarini belgilash uchun qaysi atributdan foydalaniladi?
-width
-color
-hint
-dimension
-FrameLayoutdan qanday maqsadda foydalaniladi?
-Boshqa komponentlarni o'z ichiga olish uchun
-Bitta activitydan boshqa activityga o'tish uchun
-Ro'yxat elementlarini ko'rsatish uchun
-Tog'ri javob keltirilmagan
-Foydalanuvchi interfeysida ko'rsatiladigan rasmlarni yuklash uchun qaysi elementdan foydalaniladi?
-ImageView
-ImageText
-TextView
-Button
-Birinchi rasmiy Android operatsion tizimi qachon foydalanuvchilarga taqdim qilingan?
-2008 yil 23-sentabr
-2007 yil 13-sentabr
-2007 yil 29-iyul
-2008 yil 23-oktabr
-ProgressBar qanday maqsadga xizmat qiladi?
-Jarayonning holatini ko'rsatish uchun
-Matnning yuklanish vaqtini ko'rsatish uchun
-Ma'lumotlarni qo'llab-quvvatlash
-Boshqa ilovalarga qo'llaniladigan komponentlarni ishga tushirish uchun
-Foydalanuvchi interfeysida amalni bajarish jarayonini ko'rsatadigan element qaysi?
-ProgressBar
-SeekBar
-RatingBar
-ListView
-Foydalanuvchi interfeysi elementlari orasida konteyner bo'lib, boshqa elementlarni joylash uchun ishlatiladigan element qaysi?
-LinearLayout
-TextView
-Button
-EditText
-Android operatsion tizim platformasi nechta asosiy qismdan iborat?
-5 ta, Application, Application Framework, Android Runtime, Libraries, Linux Kernel
-3 ta, Application, IntelliJ IDEA va Linux kernel
-4 ta, Application, Application Framework, Genymotion va Linux kernel
-5 ta,Application Framework, Genymotion, Linux kernel, Libraries
-RecyclerViewdan qanday maqsadda foydalaniladi?
-Ro'yxat elementlarini ko'rsatish uchun
-Ma'lumotlarni saqlash uchun
-Matnning yuklanish vaqtini ko'rsatish uchun
-Boshqa ilovalarga qo'llaniladigan komponentlarni ishga tushirish uchun
-Qanday turdagi mobil operatsion tizimlar mavjud?
-Android, BlackBerry, iOS, Marmalade, Java ME
-BlackBerry, iOS, Windows, Linux, MeeGo
-iOS, Windows, Android, Marmalade, Java ME
-FireFoxOS,Windows, Android, Marmalade, Palm OS
-Intent obyekti orqali ma'lumotlar jo'natishda foydalaniladigan yo'nalishlardan biri qaysi?
-Intent.EXTRA_TEXT
-Intent.EXTRA_SUBJECT
-Intent.EXTRA_EMAIL
-Intent.EXTRA_PHONE_NUMBER
-Android ilovalar ishlab chiqishda qanday instrumental dasturiy vositalar kerak?
-JDK (Java Development Kit), Android Studio
-JDK (Java Development Kit) va Dev-C++
-ADT (Android Developer Tools) va Code::Blocks
-JDK (Java Development Kit), Code::Blocks
-Mobil operatsion tizimlari asosan nechta platformadan iborat?
-2 ta, “user-facing” va quyi sathdagi real-vaqt operatsion tizimidan iborat
-yagona mobil operatsion tizimidan iborat
-3 ta, “user-facing”, quyi va yuqori sathdagi operatsion tizim platformasidan iborat
-2 ta, server va klient operatsion tizim platformsidan iborat
-NavigationDrawer qanday maqsadga xizmat qiladi?
-Oynaning yonida belgilangan sahifalarga o'tish uchun
-Matnning yuklanish vaqtini ko'rsatish uchun
-Ma'lumotlarni qo'llab-quvvatlash uchun
-Boshqa ilovalarga qo'llaniladigan komponentlarni ishga tushirish uchun
-Androidda biror bir amalni bajarish uchun qaysi element ishlatiladi?
-Button
-TextView
-ProgressBar
-ImageView
-SeekBardan qanday maqsadda foydalaniladi?
-Foydalanuvchi tomonidan qiymat tanlash uchun
-Matnning yuklanish vaqtini ko'rsatish uchun
-Ma'lumotlarni qo'llab-quvvatlash uchun
-Boshqa ilovalarga qo'llaniladigan komponentlarni ishga tushirish uchun
-Dart tilining mobil dasturlash uchun mo‘ljallangan freymvorkini belgilang?
-Flutter
-Spring
-Django
-Symphony
-App Store haqida to‘g‘ri ta’rifni belgilang?
-iOS foydalanuvchilari uchun mobil ilovalar do‘koni
-Android telefonlari uchun mo‘ljallangan platforma
-Onlayn kodlar generatori
-iOS uchun havfsizlikka javobgar tizim
-Microsoft kompaniyasining mobil qurilmalar uchun yaratgan mobil operatsion tizimi qaysi?
-Windows Phone
-Windows 10
-Windows XP
-Windows Vista
-Android Studioda yangi Android loyiha yaratildi. Ushbu yaratilgan loyiha ichida avtomatik hosil bo‘lgan AndroidManifest.xml faylini izohlang?
-ilova haqidagi asosiy ma’lumotlarni saqlovchi fayl hisoblanadi
-asosiy activity fayl hisoblanadi
-asosiy layout fayl hisoblanadi
-ilovadagi faqat activitylar haqidagi ma’lumotlarni saqlovchi fayl hisoblanadi
-Bir nechta variantni birgalikda tanlash maqsadida ishlatiladigan komponenta qaysi?
-Checkbox
-Button
-Text
-DatePicker
-Android Studioda tayyor bo‘lgan kodni biron qurilmada ishga tushirish (build) uchun qaysi buyruq bosiladi?
-Run (Shift + F10)
-Open (Ctrl + O)
-Debug (Shift + F9)
-Save (Ctrl + S)
-iOS platformasini qaysi kompaniya qo‘llab-quvvatlab, rivojlantirib boradi?
-Apple
-Microsoft
-Facebook
-Tesla
-Android Studiodagi Android Virtual Device qanday vazifani bajaradi?
-Emulyator yoki telefonsiz dasturni ishlatib ko‘rish imkoniyatini beradi
-Yozilgan dasturni sintaktik tahlil qiladi
-Github bilan sinxronizatsiyani ta’minlaydi
-To‘g‘ri javob yo‘q
-Android qaysi IT companiya tomonidan qo‘llab-quvvatlanadi?
-Google
-Facebook
-Microsoft
-Apple
-Komponentaning ichki chap chegarasidan bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?
-paddingLeft
-paddingBottom
-paddingRight
-paddingTop
-Quyidagi berilgan kod qismi qanday element qoʼyish uchun ishlatiladi? (AutoCompleteTextView android:id=”@+id/txtCountries” android:layout_width=”fill_parent” android:layout_height=”wrap_content” )
-AutoCompleteTextView
-TextView
-Button
-EditView
-BlueStacks dasturidan qanday maqsadda foydalanamiz?
-Emulyator
-Grafik muharrir
-Media Player
-Brauzer
-Flutter freymvorkida qaysi dasturlash tili ishlatiladi?
-Dart
-Python
-Java
-C#
-Qachon bildirishnomalar(notification)dan foydalaniladi?
-xabar muhim, ammo darhol o'qish va javob talab qilmaydi
-xabar muhim, darhol o'qish va javob berishni talab qiladi
-xabar muhim, ammo darhol o'qishni talab qiladi, lekin javob berish shart emas
-xabar foydalanuvchidan javob talab qilmaydi, lekin uning ishini davom ettirish uchun muhimdir
-Quyidagilardan faqat mobil OT lar ko‘rsatilgan qatorni belgilang
-Android, iOS, Symbian, Windows Phone
-Django, Kivy, Windows, Debian
-MacOS, Windows, Symbian, Linux
-Flutter, Windows, Android, iOS
-O'zining mobil qurilmasi dasturlari to'plamini to'ldirish uchun foydalanuvchi qaysi xizmatdan foydalanishi mumkin
-Google Play
-Google Markets
-Android Play
-Google Maps
-SQLite qanday dastur hisoblanadi?
-Ma’lumotlar bazasini boshqarish tizimi
-Freymvork
-Grafik muharrir
-Emulyator
-Faqat emulyator dasturlar berilgan qatorni toping?
-BlueStacks, Genymotion
-Genymotion, Adobe Photoshop
-Android Studio, Figma
-Visual Studio, Arduino
-Bir nechta platformalar uchun birdaniga dastur yozish imkoniga ega dasturlash tillari … dasturlash tillari deyiladi.
-Krossplatformali
-obyektga yo‘naltirilgan
-interpretatsiya qilinadigan
-Protsedurali
-Android OT qaysi kompaniya tomonidan yaratilgan?
-Android Ins
-Samsung
-Apple
-Microsoft
-Boshqa klassdan voris olish uchun (Dart, Java) qaysi kalit so‘z ishlatiladi?
-extends
-runApp
-main
-return
-Flutter frameworkida qaysi dasturlash tilida kodlar yoziladi
-dart
-kotlin
-swift
-java
-RelativeLayout chegarasidan unda joylashtirilgan elementlarni to’rt tomondan bir xil masofalarga ichkariga surish uchun qanday atributdan foydalaniladi
-padding
-layout_margin
-layout_width
-layout_height
-Funksiyadagi return buyrug‘i qanday vazifani bajaradi?
-o‘zidan keyin keluvchi ma’lumot (son, satr, …) ni funksiya chaqirilgan joyga qaytaradi (uzatadi)
-Boshqa sinfdan voris oladi
-Kerakli modullarni ulaydi
-To‘g‘ri javob berilmagan
-SDK Manager bu …
-SDK versiyalarini boshqarish utilitasi
-Virtual qurilmalarni boshqarish utilitasi
-Kodni tahlil qilish
-Loyiha modullarini boshqarish utilitas
-Android javada mantiqiy ma’lumotlar qaysi tip orqali e’lon qilinadi?
-boolean
-int (integer)
-float(double)
-String
-Joriy elementga murojaat qilish uchun qaysi kalit so‘z ishlatiladi?
-this
-return
-void
-private
-Android Studioda kerakli kutubxona va modullar qaysi komanda bilan chaqiriladi?
-import
-extends
-run
-class
-RadioGroup qaysi tugmani o‘z ichiga oladi?
-RadioButton
-Kommutator
-ToogleButton
-CheckBox
-Table (yoki DataTable) komponentasi nima uchun ishlatiladi?
-Ma’lumotlarni jadval ko‘rinishida ekranga chiqarish uchun
-Rasmlarni joylashtirish uchun
-Material dizayn kutubxonasini chaqirish uchun
-Audio ma’lumotlarni joylashtirish uchun
-TableLayout  - oynasi jadval qatorini hosil qilish uchun qaysi  elementdan foydalaniladi?
-TableRow
-Image
-Radio
-Text
-Android Studioda ishlab chiqilgan mobil ilova loyihasida kerakli paketlar haqidagi ma’lumotlar qaysi faylda saqlanadi?
-. packages
-. metadata
-. gitignore
-android
-View komponentalarida isChecked() metodi nima uchun ishlatiladi?
-radiobutton yoki checkbox komponentasining belgilanganligini tekshirish uchun
-radiobutton yoki button bosilganligini tekshirish uchun
-Gallery dagi bironta rasm belgilanganligini tekshirish uchun
-Bunday metod mavjud emas
-Android SDK nima uchun ishlatiladi?
-Android ilovalarini yaratishda ishlatiladigan kutubxona, kodlar tasnifi va debugger hisoblanadi
-Android ilovalarini yaratishda standart klasslarni kompilyatsiya qiladi
-Virtual mashinani to‘liq boshqaradi
-Java virtual mashinasi ishlashi uchun kutubxona
-GUI nima?
-Foydalanuvchi grafik interfeysi
-Dasturlash uchun kerakli modullar
-Freymvork
-Yuqoridagilardan hech qaysi biri
-Android Studioda yangi loyiha yaratish ketma-ketligi to‘g‘ri keltirilgan javobni belgilang
-File » New » New Project
-File » Open
-File » Open recent » Project_name
-File » New » Import Project
-… tugma hisoblanib, uni bosish orqali muayyan amalni bajarishga dasturlash mumkin.
-Button
-Radio
-CheckBox
-Text
-Mobil ilovalar ishlab chiqishda foydalaniladigan freymvorklarni belgilang
-Kivy, Flutter, React Native
-Java, PHP, SQL
-Flask, Spring, Kivy
-React JS, Node JS, C#
-LinearLayout chegarasidan unda joylashtirilgan elementlarni to’rt tomondan bir xil masofalarga ichkariga surish uchun qanday atributdan foydalaniladi
-padding
-layout_margin
-layout_height
-layout_width
-Genymotion, BlueStacks qanday vazifani bajaruvchi dasturlar?
-emulyator
-kompilyator
-kod muharriri
-grafik muharrir
-LinearLayout komponentalarni qanday ko‘rinishda joylashtiradi?
-gorizontal yoki vertikal holatda
-komponentalarni bir-biriga bog‘liq holda
-jadval ko‘rinishida
-ekranning x va y koordinatalari bo‘yicha
-Emulyator qanday dastur?
-Bir OT uchun yozilgan dasturni boshqa OT da ishlashini ta'minlovchi dastur
-Yozilgan kodni interpretatsiya qilib beruvchi dastur
-Bir dasturlash tilida yozilgan kodni boshqa tilga konvertatsiya qiluvchi dastur
-Yozilgan kodni kompilyatsiya qilib beruvchi dastur
-"Mobil ilova" atamasi qanday ilovalarga nisbatan ishlatiladi?
-Mobil platformalarda ishlovchi ilovalar
-Desktop interfeysda ishlovchi ilovalar
-Linux OT da ishlovchi ilovalar
-Web interfeysda ishlovchi ilovalar
-Androidga to‘g‘ri ta’rif berilgan qatorni belgilan
-Linux Kernell yadrosida ko‘tarilgan mobil OT
-Apple qurilmalari uchun yaratilgan mobil OT
-Windows OT negizida yaratilgan mobil OT
-Java Development Kit dasturiy vositalari to‘plami komponentasi
-Grafik interfeys bu
-Foydalanuvchining grafik interfeysi
-Operatsion tizim. Qurilmadagi eng muhim dastur
-Ichki rivojlanish muhiti
-Android dastur kodi fayli to‘plangan
-Androidda avtomatik taqdim etiladigan ma’lumotlar bazasini boshqarish tizimini belgilang
-SQLite
-Apache
-Oracle
-MySQL
-Play Store nima?
-Android telefonlari uchun mo‘ljallangan mobil ilovalar do‘koni
-Foydalanuvchilarga iTunes do‘konidan turli xil mobil ilovalarni ko‘rib chiqish va yuklab olish imkoniyatini beruvchi xizmat
-App Store-dan bepul yoki pullik dasturlarni yuklash servisi
-Mobil ilovalar ishlab chiqish uchun onlayn platforma
-Ilovada matn(String)larni qaysi faylda saqlash mumkin
-string.xml
-manifest.xml
-web.xml
-text.xml
-Kivy freymvorkida qaysi dasturlash tilidan foydalaniladi?
-Python
-PHP
-Ruby
-Pascal
-Android Studioda Flutter bilan ishlaganda Dart dasturlash tiliga doir maxsus sozlamalar qaysi faylda saqlanadi?
-.dart
-android
-ios
-lib
-CheckBox komponentasiga to‘g‘ri ta’rif berilgan qatorni belgilang
-bu maxsus turdagi tugma va ikkita holatda bo‘lishi mumkin: checked yoki unchecked.
-tugmachaga o‘xshash vidjet bo‘lib, unda rasm tugma sifatida ishlatilishi
-Sahifaga rasm qo‘yish uchun ishlatiladi
-tugmachadir va bu tugma bosilganda ma'lum bir operatsiya amalga oshiriladi.
-ToggleButton qanday komponenta hisoblanadi?
-checked/unchecked holatining indicator li ko‘rinishi
-Buttonga o‘xshash va bu komponentaga rasm joylashtirish mumkin
-oddiy checkboxga o‘xshash komponenta
-radiobutton komponentasining boshqacha ko‘rinishi
-… buttonga o‘xshash vidjet bo‘lib, rasmni tugma sifatida ishlatish mumkin.
-ImageButton
-EditText
-Radio
-Text
-Android haqida to‘g‘ri ta’rif berilgan qatorni belgilang?
-Barcha javoblar to‘g‘ri
-Linux asosida yaratilgan
-Open source
-Foydalanish tekin
-Xabarni chiqarish uchun qaysi sinfdan foydalaniladi?
-Toast
-Hint
-Text
-Message
-Android Studioda virtual qurilmalar (telefon, planshet, …) ni yaratish, boshqarish imkonini beruvchi vositani belgilang
-AVD manager
-SDK manager
-Resource manager
-Project manager
-Android ilovalarida rasmli ma’lumotlarni qaysi komponenta yordamida joylashtirish mumkin
-ImageView
-TextView
-EditText
-ImageClass
-Ham android, ham iOS tizimlari uchun ilovalar ishlab chiqish mumkin bo’lgan frameworkni belgilang
-Flutter
-Dart
-Android studio
-Xcode
-RelativeLayoutdan foydalanib elementlarni markazga(ham vertikal, ham gorizantal) joylashtirishda qanday atributdan foydalaniladi
-layout_centerInParent
-layout_centerHorizontal
-layout_centerVertical
-layout_center
-TextView elementidagi matn rangini qaysi atribut yordamida o’rnatish mumkin
-textColor
-colorText
-background
-color
-Android Studioda dastur kodini kompilyatsiya qilib, to‘g‘ridan to‘g‘ri telefonga o‘rnatish mumkinmi?
-Mumkin, USB interfeys va ba’zi sozlamalar bilan
-Mumkin emas
-Mumkin, WiFi yoki Bluetooth orqali
-To‘g‘ri javob yo‘q
-Android ilovalari garafik interfeysida elementlar idsi qaysi atribut yordamida o’rnatiladi
-id
-layout_id
-text
-padding
-Ma’lumotlarni jadval ko‘rinishida aks ettirish uchun qaysi komponenta ishlatiladi?
-TableRow, TableLayout
-Text, TextView
-Radio, RadioButton
-ListView
-… buttonning maxsus turi hisoblanib, ikki hil holatda bo‘lishi mumkin: checked yoki unchecked.
-CheckBox
-Image
-Radio
-Text
-Mobil ilovalar dizaynini ishlab chiqishda UI tushunchasi nimani ifodalaydi?
-Foydalanuvchi interfeysi
-Foydalanuvchi tajribasi
-Mijoz talablari
-Texnik topshiriq
-TableLayout komponentalarni qanday ko‘rinishda joylashtiradi?
-jadval ko‘rinishida
-ekranning x va y koordinatalari bo‘yicha
-komponentalarni bir-biriga bog‘liq holda
-gorizontal yoki vertikal holatda
-Android Studioda ishlab chiqilgan mobil ilova loyihasida android katalogida qanday ma’lumotlar saqlanadi?
-Android maxsus (native) kodlari
-iOS ga oid kodlar
-Flutter yangilanishiga oid metama’lumotlar
-Kutubxona sozlamalari
-Qaysi turdagi qiymat ekranning to'liq kengligigacha egallaydi?
-match_parent
-wrap_parent
-size_parent
-fill_parent
-Zamonaviy smartfonlar quyidagi qaysi funksiyalarga ega?
-Barcha javoblar to‘g‘ri
-Wi-Fi, Bluetooth
-GPS, Voice Call
-Touch Screen, Media Player
-Android mobil qurilmalari uchun Googlening ilovalar do‘koni qanday nomlanadi?
-Play Market
-Amazon
-Github
-App Store
-Ishlab chiqilgan ilovani ishchi kompyuterda testlash uchun qanday vositadan foydalaniladi?
-Android virtual device (AVD)
-Android virtual machine (AVM)
-Java virtual machine (JVM)
-Dalvik virtual machine (DVM)
-Android-ilovalarida foydalanuvchi grafik interfeysini yaratishda qaysi razmetkali tildan foydalaniladi?
-xml
-gml
-xhtml
-html
-Mobil ilovalar dizaynini ishlab chiqishda UX tushunchasi nimani ifodalaydi?
-Foydalanuvchi tajribasi
-Foydalanuvchi interfeysi
-Moslashuvchan dizayn
-Adaptiv interfeys
-Vaqt bilan ishlash uchun Android Studioda qaysi komonenta ishlatiladi?
-TimePicker
-RadioButton
-TextView
-CheckBox
-Mobil dasturlashda faqatgina matn ko‘rinishidagi ma'lumotlarni ko‘rsatish uchun ishlatiladi va <........> elementi yordamida yaratiladi
-TextView
-ListView
-GridView
-DataTable
-Qaysi faylda loyihaning satrli ma’lumotlari (resurslari) joylashadi?
-strings.xml
-AndroidManifest.xml
-activityfullscreen.xml
-text.xml
-Sinf yaratish qaysi kalit so‘z yordamida amalga oshiriladi?
-class
-function
-extend
-Debug
-Komponentaning ichki chegarasida bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?
-padding
-margin
-context
-background
-Mavjud variantlardan faqat bittasini belgilash uchun ishlatiladigan komponenta qaysi?
-Radio/RadioButton
-Text/TextView
-Grid/GridView
-Table/DataTable
-Qaysi MBBT avtomatik ravishda Android tomonidan taqdim etiladi?
-SQLite
-Apache
-Oracle
-MySQL
-Android Studioda qanday mahsulotlar yaratish mumkin?
-Barcha javoblar to‘g‘ri
-Mobil telefonlar uchun dasturlar
-Planshetlar uchun dasturlar
-Android televizorlar uchun dasturlar
-Orqafon rangini qaysi atribut orqali o‘rnatiladi?
-android:background="#E3254B"
-android:textcolor="#DC2020"
-android:Color="# B15355"
-android:id="#FF88FF"
-Komponentaning tashqi chegarasida bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?
-margin
-context
-background
-padding
-Komponentaning tashqi chap chegarasidan bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?
-marginLeft
-marginBottom
-marginRight
-marginTop
-JVM kengaytmasi qanday?
-Java Vitual Machine
-Java Vending Machine
-Java Virtual Mechanism
-Java Visual Mechanism
-Matematik funksiyalarni o‘z ichiga olgan kutubxona qanday nomlanadi?
-Math
-Material
-Cupertino
-Main
-AVD ning o‘rniga qanday virtual mashinalardan foydalanish mumkin?
-Genymotion, BlueStacks
-JDK, Android SDK, Genymotion
-BlueStacks, Android SDK, Eclipse
-Android SDK, Eclipse, IntelliJ IDEA
-Obyekt vertikal uzunligini sozlash uchun qaysi atributga murojaat qilinadi?
-height
-width
-title
-caption
-Android Studioda mavjud loyihani ochish ketma-ketligi to‘g‘ri keltirilgan javobni belgilang?
-File » Open
-File » New » New Project
-File » Open recent » Project_name
-File » New » Import Project
-AutoCompleteTextView va EditText komponentalarning bir-biridan farqi nimada?
-AutoCompleteTextView komponentasi kiritilayotgan matnni avtomatik to‘ldirish imkoniyatini beradi
-AutoCompleteTextView komponentasida matn to‘liq ko‘rinadi
-AutoCompleteTextView komponentasiga faqat matn kiritiladi
-Ikkalasi ham bir xil funksiyani bajaradi
-Android Studioda tayyor bo‘lgan faylni saqlash uchun qaysi buyruq bosiladi?
-Save (Ctrl + S)
-Open (Ctrl + O)
-Debug (Shift + F9)
-Run (Shift + F10)
-Obyekt gorizontal uzunligini (kengligini) sozlash uchun qaysi atributga murojaat qilinadi?
-width
-height
-title
-caption
-Android ilova yaratilganda loyihaning qaysi faylida ilova haqidagi umumiy ma’lumotlar saqlanadi?
-AndroidManifest.xml
-res/layout/main.xml
-AndroidManifest.java
-Manifest.xml
-CheckBox qiymati true yoki false ekanligini tekshirish uchun bu sinfining qanday metodidan foydalaniladi?
-isChecked()
-setAllCaps()
-animate()
-callOnClick()
-Komponentaning ichki yuqori chegarasidan bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?
-paddingTop
-paddingBottom
-paddingRight
-paddingLeft
-…-TextView ning qo‘shimcha imkoniyatli turi hisoblanib, foydalanuvchi ushbu komponenta orqali ma’lumot kiritishi mumkin.
-EditText
-Button
-Checkbox
-RadioButton
-SDK kengaytmasi qanday?
-Software Development Kit
-Self-Development Kernel
-Software Design Kit
-Standart Development Kit
-… - komponentalarning jadval asosida joylashuvidir.
-TableLayout
-LinearLayout
-FrameLayout
-AbsoluteLayout
-…- bu komponentalarni bitta qatorga (gorizontal) yoki ustun (vertikal)ga joylashtirish uchun ishlatiladi.
-LinearLayout
-FrameLayout
-AbsoluteLayout
-TableLayout
-Android Studioda matnga rang berish qaysi atribut orqali o‘rnatiladi?
-android: textcolor
-android: text
-android:textStyle
-android: id
-Android Studioda kiritilgan matn qalinligini sozlash to‘g‘ri kiritilgan qatorni belgilang?
-android:textStyle="bold"
-android:textColor="#ffff"
-android:text="black"
-android:textStyle="italic"
+android:layout_height="wrap_content")<br>*A)EditText<br>B)Text<br>C)Matn<br>D)Rasm<br><br>#####################<br>Android
+Studio da java kodlari bilan ishlovchi fayl qaysi qatorda keltirilgan?<br>*A)MainActivity.java<br>B)Strings.kt<br>C)AndroidButton.xml<br>D)AndroidManifest.xml<br><br>#####################<br>Android
+Studioda kiritilgan matn o‘lchamini o‘gartirish uchun qaysi atributdan foydalaniladi?<br>*A)android:textSize="25dp "<br>B)android:textColor="#ffff"<br>C)android:text="black"<br>D)android:textStyle="bold
+"<br><br>#####################<br>CheckBox sinfining asosiy usullari qanday?<br>*A)public boolean isChecked (), public
+void setChecked (boolean status)<br>B)public string getText (), public void toString ()<br>C)public void makeText (),
+public void getApplicationContext ()<br>D)public void getBoxId (), public void show ()<br><br>#####################<br>…-
+activity to‘xtatilgan vaqtda chaqiriladi.<br>*A)onRestart()<br>B)onStart()<br>C)onCreate()<br>D)onPause()<br><br>#####################<br>Android
+Studioda yangi loyiha yaratildi. Ushbu yaratilgan loyiha ichida avtomatik hosil bo‘lgan res papkasida nimalar
+joylashadi?<br>*A)loyihaga tegishli resurslar (layout, string, style va h.k.lar)<br>B)asosiy java fayllar<br>C)AndroidManifest.xml
+fayli joylashadi<br>D)Loyihaning asosiy activity fayllari<br><br>#####################<br>Label vazifasini bajaruvchi
+komponentalar nomlari berilgan qatorni ko‘rsating?<br>*A)TextView<br>B)Button, Checkbox<br>C)Radio, Grid<br>D)Table,
+DataTable<br><br>#####################<br>…- activity to‘xtatilgan vaqtda
+chaqiriladi.<br>*A)onDestroy()<br>B)onPause()<br>C)onRestart()<br>D)onStop()<br><br>#####################<br>Android
+Studioda ilovalar qaysi dasturlash tilida ishlab chiqiladi?<br>*A)Java, Kotlin, Dart<br>B)Swift<br>C)Faqat Dart<br>D)Faqat
+Java<br><br>#####################<br>…– bu komponentalarni ma’lum o‘lchamlar va oraliqlar asosida joylashtirish
+imkoniyatini yaratadi.<br>*A)AbsoluteLayout<br>B)LinearLayout<br>C)FrameLayout<br>D)TableLayout<br><br>#####################<br>Matn
+qalinligini sozlash uchun qaysi atributga qiymat beriladi?<br>*A)android:textStyle<br>B)android: text<br>C)android:
+textcolor<br>D)android: id<br><br>#####################<br>Android Studioda kiritilgan matnni kursiv ko‘rinishiga
+o‘tkazish qaysi buyrug‘i to‘g‘ri kiritilgan qatorni belgilang?<br>*A)android:textStyle="italic "<br>B)android:textColor="#ffff"<br>C)android:text="black"<br>D)android:textStyle="bold
+"<br><br>#####################<br>MainActivity.java faylidagi "TextView" ga matn kiritish uchun activity_main.xml da
+qanday kod yoziladi?<br>*A)android: text = "Salom"<br>B)android: layout_width = "wrap_content"<br>C)android:
+layout_below = "@ + id / TextView "<br>D)android: id = "@ + id /Salom "<br><br>#####################<br>Android Studioda
+CheckBox tugmasini aktiv holati to‘g‘ri keltirilgan qatorni belgilang?<br>*A)android:checked="true"<br>B)android:
+text="CheckBox"<br>C)android:textAlignment="center"<br>D)android:checked="false"<br><br>#####################<br>Ma'lumotlar
+manzili (path) nima uchun ishlatiladi?<br>*A)Chaqirilgan resursning local/global adresini ko‘rsatish uchun<br>B)Video
+formatini sozlash uchun<br>C)Fayl toifasini haqida xabar berish uchun<br>D)Ekran o‘lchamiga moslashish uchun<br><br>#####################<br>CheckBox
+nima?<br>*A)bu maxsus turdagi button va ikkita holatda bo‘lishi mumkin: belgilangan yoki belgilanmagan.<br>B)tugmachaga
+o‘xshash vidjet bo‘lib, unda rasm tugma sifatida ishlatilishi mumkin<br>C)tekshirilgan / tekshirilmagan ko‘rsatkich turi<br>D)tugmachadir
+va bu tugma bosilganda ma'lum bir operatsiya amalga oshiriladi.<br><br>#####################<br>Android Studioda
+quyidagi qaysi platformalar uchun dasturlar yozish mumkin?<br>*A)Android va iOS, iOS uchun Flutter plaginini o‘rnatib
+yozish mumkin<br>B)Faqat Android<br>C)Faqat iOS<br>D)Symbian<br><br>#####################<br>Quyidagi berilgan kod qismi
+qanday element qoʼyish uchun ishlatiladi? (ProgressBar android:id=”@+id/Progress” android:layout_width=”wrap_content”
+android:layout_height=”wrap_content”)<br>*A)ProgressBar<br>B)TextView<br>C)Progress<br>D)Jarayon<br><br>#####################<br>onDestroy()
+metodi qanday holatda ishga tushadi?<br>*A)activity to‘xtatilgan vaqtda chaqiriladi<br>B)activity foydalanuvchiga
+ko‘rinmay qolganida chaqiriladi<br>C)activity natijasi foydalanuvchiga ko‘ringanda chaqiriladi<br>D)joriy activity
+faoliyati vaqtinchalik to‘xtatilib boshqa activity faollashtirilganda chaqiriladi<br><br>#####################<br>RelativeLayoutda
+layout_toRightOf atributi nimani bildiradi<br>*A)Layoutga elementni ko’rsatilgan idli elementning o’ng tarafiga
+joylashtiradi<br>B)Layoutga elementni o’ng tarafda joylashtiradi<br>C)Layoutga elementni ko’rsatilgan idli elementning
+o’ng tarafi va pastga joylashtiradi<br>D)Layoutga elementni o’ng tarafi va pastga joylashtiradi<br><br>#####################<br>wrap_content
+va match_parent qiymatlari qanday farqlanadi?<br>*A)match_parent qiymati butun ekran yoki Layout bo’ylab joylashishni
+bildiradi<br>B)wrap_content qiymati butun ekran yoki Layout bo’ylab joylashishni bildiradi<br>C)match_parent qiymati
+butun ekran yoki Layout bo’ylab markazga joylashishni bildiradi<br>D)wrap_content qiymati butun ekran yoki Layout
+bo’ylab markazga joylashishni bildiradi<br><br>#####################<br>Androidning Jelly Bean nomli turi qaysi qaysi
+versiyalar va API level ni o‘z ichiga oladi?<br>*A)Android 4.1, 4.2, 4.3 va 16-18 API level larni<br>B)Jelly Bean
+versiyada API level mavjud emas<br>C)Android 4.3, 4.4 va 18-19 API level larni<br>D)Android 4.3, 4.4, 5.0 va 18-20 API
+level larni<br><br>#####################<br>Ilova ma’lumotlarini avtomatik XML faylga saqlashda qanday obyektdan
+foydalaniladi?<br>*A)SharedPreferences obyekti orqali<br>B)FileWriter obyekti orqali<br>C)ilova ma’dumotlarini XML
+faylda saqlash imkoniyati yo‘q<br>D)FileBuffer obyekti orqali<br><br>#####################<br>Flutter freymvorki qaysi
+kompaniya tomonidan qo‘llab quvvatlanadi?<br>*A)Google<br>B)Facebook<br>C)Apple<br>D)Yandex<br><br>#####################<br>Button
+ustiga sichqoncha bilan bosilganda qaysi metod ishga tushadi?<br>*A)onPress (Pressed)<br>B)onCheck (Checked)<br>C)onChange(Changed)<br>D)Bunday
+metod mavjud emas<br><br>#####################<br>SQLite haqida quyidagilardan qaysi biri to‘g‘ri?<br>*A)Ma’lumotlar
+bazasini boshqarish tizimi<br>B)Virtual server<br>C)Android Studioning maxsus kutubxonasi<br>D)Freymvork<br><br>#####################<br>Android
+Studioda yaratilgan ilovani .apk formatga o‘tkazish ketma-ketligi qanday?<br>*A)Build » Build bundle » Build APK<br>B)File
+» Open » Build APK<br>C)Build » New » Build APK<br>D)Build » Import Project<br><br>#####################<br>iOS uchun
+yozilgan kodni qanday qurilmada build qilish mumkin?<br>*A)Faqatgina MacOS o‘rnatilgan qurilmada<br>B)Istalgan Linux
+o‘rnatilgan kompyuterda<br>C)Windows 10 o‘rnatilgan kompyuterda<br>D)Istalgan OT o‘rnatilgan qurilmada<br><br>#####################<br>BaseAdapter
+sinfining voris sinflari qaysilar?<br>*A)ArrayAdapter, ListAdapter, SpinnerAdapter, CursorAdapter<br>B)ListAdapter,
+SpinnerAdapter,ListView,GridView<br>C)SpinnerAdapter, CursorAdapter, Spinner, Gallery<br>D)ListView,GridView,
+SpinnerView, Gallery<br><br>#####################<br>onStart() metodi qanday holatda ishga tushadi?<br>*A)activity
+natijasi foydalanuvchiga ko‘ringanda chaqiriladi<br>B)activity ish faoliyati to‘xtatilib qayta ishga tushirilganida
+chiqariladi<br>C)activity foydalanuvchi tomonidan ishlatilayotganda chaqiriladi<br>D)activity foydalanuvchiga ko‘rinmay
+qolganida chaqiriladi<br><br>#####################<br>onCreateContextMenu()metodi qachon ishlatiladi?<br>*A)ilovalarda
+Context menu yaratilayotganda<br>B)ilovalarda Grid menu yaratilayotganda<br>C)ilovalarda Option menu
+yaratilayotganda<br>D)ilovalarda Layout menu yaratilayotganda<br><br>#####################<br>Android Studioda ishlab
+chiqilgan mobil ilova loyihasida Git sozlanmalari qaysi faylda saqlanadi?<br>*A).gitignore<br>B).packages<br>C).metadata<br>D)android<br><br>#####################<br>Android
+Studioda ImageView komponentasiga rasm kiritish buyrug‘i to‘g‘ri keltirilgan qatorni belgilang?<br>*A)android:src="@drawable/circle"<br>B)android:id="@+id/imageView"<br>C)android:layout_width="wrap_content"<br>D)android:layout_height="wrap_content"<br><br>#####################<br>Android
+operatsion tizimi uchun ilovalar ishlab chiqishda asosan qanday dasturlash tillaridan foydalaniladi?<br>*A)Java, Kotlin,
+Dart, C#, JavaScript<br>B)Objective – C, Objective Pascal, Swift<br>C)HTML5, CSS, JavaScript, Swift<br>D)Faqat Java va
+Kotlin<br><br>#####################<br>Android SDK kutubxonasida Google APIs nima uchun ishlatiladi?<br>*A)ilovalarda
+karta va GPS xizmatini boshqarish uchun<br>B)ilovalarda karta xizmati va google qidiruv xizmatini boshqarish uchun<br>C)ilovalarda
+GPS xizmatini boshqarish uchun<br>D)ilovalarda google qidiruv xizmatini boshqarish
+uchun<br><br>#####################<br>Android Studioda yangi plagin o‘rnatish ketma-ketligi qanday?<br>*A)File »
+Settings »Plugins » Search & Install<br>B)File » Open<br>C)File » New » New Project<br>D)File » Close<br><br>#####################<br>Explicit
+Intent va Implicit Intent o'rtasidagi asosiy farq nima?<br>*A)Explicit Intent faqat bitta activityga yo'naltirish uchun
+ishlatiladi, implicit Intent esa boshqaruvchi tizimning boshqa komponentlariga ham yo'naltirishga imkon beradi<br>B)Explicit
+Intent faqat bitta xizmatga yo'naltirish uchun ishlatiladi, implicit Intent esa boshqaruvchi tizimning boshqa
+komponentlariga ham yo'naltirishga imkon beradi<br>C)Explicit Intent faqat bitta fragmentga yo'naltirish uchun
+ishlatiladi, implicit Intent esa boshqaruvchi tizimning boshqa komponentlariga ham yo'naltirishga imkon beradi<br>D)Explicit
+Intent faqat bitta sinfga yo'naltirish uchun ishlatiladi, implicit Intent esa boshqaruvchi tizimning boshqa
+komponentlariga ham yo'naltirishga imkon beradi<br><br>#####################<br>Android ilovadarida ekranning to‘rtta
+burchagi hisobiga komponentalarni boshqarish nima deb ataladi?<br>*A)Anchoring<br>B)Resizing and repositioning<br>C)Display
+orientation<br>D)RelativeLayout<br><br>#####################<br>Sana bilan ishlovchi komponenta (Android Studio,
+Flutter) qanday nomlanadi?<br>*A)DatePicker<br>B)Button<br>C)Checkbox<br>D)Radio<br><br>#####################<br>startActivity()
+metodi nima uchun ishlatiladi?<br>*A)intent ob’ekti orqali chaqirilgan activityni ishga tushiradi<br>B)joriy activity ni
+ishga tushirish uchun<br>C)Android tizimida bunday metod mavjud emas<br>D)joriy activity ni ish faoliyatini to‘xtatib
+qayta ishga tushiradi<br><br>#####################<br>Android Studioda yangi Android loyiha yaratildi. Ushbu yaratilgan
+loyiha ichida avtomatik hosil bo‘lgan java papkasida nimalar joylashadi?<br>*A)asosiy activity fayllar<br>B)loyiha
+interfeys fayllari<br>C)AndroidManifest.xml fayli joylashadi<br>D)loyihaga tegishli resurslar (layout, string, style va
+h.k.lar)<br><br>#####################<br>Android dasturlari qaysi kengaytma bilan saqlanadi?<br>*A).apk<br>B).cpp<br>C).txt<br>D).exe<br><br>#####################<br>Android
+Studioda mavjud faylni ochish uchun qaysi buyruqdan foydalaniladi?<br>*A)Open (Ctrl + O)<br>B)Run (Shift + F10)<br>C)Debug
+(Shift + F9)<br>D)Save (Ctrl + S)<br><br>#####################<br>Android Studio dasturida asosan matnli ma’lumotlar
+bilan ishlovchi .xml fayli qaysi?<br>*A)strings.xml<br>B)colors.xml<br>C)button.xml<br>D)manifest.xml<br><br>#####################<br>JSON
+kengaytmasi qanday?<br>*A)JavaScript Object Notation<br>B)Java Server Object Native<br>C)JavaScript Object Native<br>D)Java
+Server Object Notation<br><br>#####################<br>Mobil ilova (masalan, birorta .apk kengaytmali fayl) ni
+kompyuterda ishlatish imkonini beruvchi dasturlar qanday nomlanadi?<br>*A)Emulyator<br>B)Kompilyator<br>C)Translator<br>D)Editor<br><br>#####################<br>onStop()
+metodi qanday holatda ishga tushadi?<br>*A)activity foydalanuvchiga ko‘rinmay qolganida chaqiriladi<br>B)activity
+natijasi foydalanuvchiga ko‘ringanda chaqiriladi<br>C)activity to‘xtatilgan vaqtda chaqiriladi<br>D)joriy activity
+faoliyati vaqtinchalik to‘xtatilib boshqa activity faollashtirilganda chaqiriladi<br><br>#####################<br>Android
+qaysi sabablarga ko‘ra Linuxga asoslanib yaratilgan?<br>*A)Barcha javoblar to‘g‘ri<br>B)Xavfsizlik<br>C)Portativlik<br>D)Tarmoqlilik<br><br>#####################<br>CheckBox
+foydalanuvchi interfeysida qanday boshqaruv elementini ifodalaydi?<br>*A)Belgilash qismi mavjud bo'ladi<br>B)Tugma
+bo'ladi<br>C)Matn qiymati bo'ladi<br>D)Radiobutton bo'ladi<br><br>#####################<br>Kotlin tilida yozilgan kodlar
+qaysi faylda saqlanadi?<br>*A).kt kengaytmali faylda<br>B).java kengaytmali faylda<br>C).xml kengaytmali faylda<br>D).json
+kengaytmali faylda<br><br>#####################<br>LinearLayout va RelativeLayout orasidagi asosiy farq nima?<br>*A)LinearLayout
+elementlarni o'lchamlarga bo'lgan bog'liqlik bilan joylashtiradi, RelativeLayout esa elementlarni bir-biriga nisbatan
+joylashtiradi<br>B)LinearLayout faqat bitta elementni joylashtirishga imkon beradi, RelativeLayout esa bir nechta
+elementni joylashtirishga imkon beradi<br>C)LinearLayout elementlarni top_to_bottom tartibida joylashtiradi,
+RelativeLayout esa elementlarni left_to_right tartibida joylashtiradi<br>D)LinearLayout elementlarni keskin tartibda
+joylashtiradi, RelativeLayout esa elementlarni o'lchamlarga bo'lgan bog'liqlik bilan joylashtiradi<br><br>#####################<br>Qaysi
+variantda foydalanuvchi interfeysi elementlarini joylashtirishda layout turi xato ko'rsatilgan?<br>*A)APILayout<br>B)LinearLayout<br>C)RelativeLayout<br>D)ConstraintLayout<br><br>#####################<br>Intent
+obyekti yordamida foydalanuvchi boshqa tizimga yo'naltirishni sozlashda qaysi Intent turi ishlatiladi?<br>*A)Implicit
+Intent<br>B)Explicit Intent<br>C)Broadcast Intent<br>D)Service Intent<br><br>#####################<br>Java tilida
+yozilgan kodlar qaysi faylda saqlanadi?<br>*A).java kengaytmali faylda<br>B).kt kengaytmali faylda<br>C).xml kengaytmali
+faylda<br>D).json kengaytmali faylda<br><br>#####################<br>Androidda qaysi element ilovaga ma’lumot kiritish
+uchun qo’llaniladi?<br>*A)EditText<br>B)TextView<br>C)Button<br>D)ImageView<br><br>#####################<br>Intent
+obyektiga ma'lumotlar uzatish uchun qaysi metoddan foydalaniladi?<br>*A)putExtra()<br>B)attachData()<br>C)sendData()<br>D)setData()<br><br>#####################<br>ListView
+qanday maqsadga xizmat qiladi?<br>*A)Ro'yxat elementlarini ko'rsatish uchun<br>B)Tabriklovchi xabarlarni namoyish etish
+uchun<br>C)Ma'lumotlarni saqlash uchun<br>D)Boshqa ilovalarga qo'llaniladigan komponentlarni ishga tushirish
+uchun<br><br>#####################<br>Matnni o‘rtaga tekislash uchun textAlign atributiga qanday qiymat beriladi?<br>*A)center<br>B)left<br>C)right<br>D)bottom<br><br>#####################<br>Foydalanuvchi
+interfeysidagi rasmni ko'rsatish uchun qaysi elementdan foydalaniladi?<br>*A)ImageView<br>B)ImageButton<br>C)Button<br>D)CheckBox<br><br>#####################<br>Intent
+obyektini yaratish uchun qaysi metoddan foydalaniladi?<br>*A)createIntent()<br>B)startActivity()<br>C)startIntent()<br>D)newIntent()<br><br>#####################<br>Androidda
+foydalanuvchi interfeysi qaysi tillarda yoziladi?<br>*A)XML tilida<br>B)Java tilida<br>C)Python tilida<br>D)C tilida<br><br>#####################<br>Intent
+obyekti orqali qanday qilib bitta faylni jo'natish mumkin?<br>*A)putFile()<br>B)putExtraFile()<br>C)setDataAndType()<br>D)setType()<br><br>#####################<br>Androidda
+foydalanuvchi interfeysi elementlariga murojat qilish uchun qaysi XML atributi foydalaniladi?<br>*A)id<br>B)layout_width<br>C)background<br>D)text<br><br>#####################<br>Androidda
+foydalanuvchi interfeysi boshqaruv elementlari uchun stil kodlari qaysi faylda saqlanadi?<br>*A)XML fayllarida<br>B)Java
+sinflarida<br>C)Manifest fayllarida<br>D)Gradle fayllarida<br><br>#####################<br>Intent obyektini ishlatib,
+boshqa activityni boshqarish uchun qaysi metoddan foydalaniladi?<br>*A)startActivity()<br>B)startActivityForResult()<br>C)startService()<br>D)startActivityIfNeeded()<br><br>#####################<br>APIning
+kengaytmasi qanday ifodalanadi?<br>*A)Application Programming Interface<br>B)Android Programming Interaction<br>C)Application
+Programming Interaction<br>D)Android Program Interface<br><br>#####################<br>Komponentaning tashqi o‘ng
+chegarasidan bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?<br>*A)marginRight<br>B)marginBottom<br>C)marginLeft<br>D)marginTop<br><br>#####################<br>Androidda
+foydalanuvchi interfeysi (UI) nima uchun ishlatiladi?<br>*A)Foydalanuvchi bilan aloqada bo'lish uchun<br>B)Ma'lumotlarni
+saqlash uchun<br>C)Qo'llab-quvvatlash uchun<br>D)Server qismga bog'lanish uchun<br><br>#####################<br>Foydalanuvchi
+interfeysida elementlar orasidagi o'zaro tartiblash uchun qaysi element ishlatiladi?<br>*A)RelativeLayout<br>B)LinearLayout<br>C)ConstraintLayout<br>D)GridLayout<br><br>#####################<br>Foydalanuvchi
+interfeysidagi matnni shakllantirish va joylashish uchun qaysi elementdan
+foydalaniladi?<br>*A)TextView<br>B)EditText<br>C)Button<br>D)CheckBox<br><br>#####################<br>Intent obyektida
+qanday qilib Activityni to'xtatish mumkin?<br>*A)finishActivity()<br>B)stopActivity()<br>C)pauseActivity()<br>D)cancelActivity()<br><br>#####################<br>Foydalanuvchi
+interfeysi elementlari stilini belgilash uchun qaysi atributdan foydalaniladi?<br>*A)style<br>B)layout<br>C)theme<br>D)design<br><br>#####################<br>DatePickerdan
+qanday maqsadda foydalaniladi?<br>*A)Sana tanlash uchun oynachadan iborat<br>B)Vaqtni tanlash uchun oynachadan
+iborat<br>C)Matnning yuklanish vaqtini ko'rsatish uchun<br>D)Matn qiymati bo'ladi<br><br>#####################<br>AlertDialogdan
+qanday maqsadda foydalaniladi?<br>*A)Foydalanuvchiga xabar berish uchun<br>B)Oynaning yonida belgilangan sahifalarga
+o'tish uchun<br>C)Ma'lumotlarni qo'llab-quvvatlash uchun<br>D)Boshqa ilovalarga qo'llaniladigan komponentlarni ishga
+tushirish uchun<br><br>#####################<br>Foydalanuvchi interfeysi elementlarining o'lchamlarini belgilash uchun
+qaysi atributdan foydalaniladi?<br>*A)width<br>B)color<br>C)hint<br>D)dimension<br><br>#####################<br>FrameLayoutdan
+qanday maqsadda foydalaniladi?<br>*A)Boshqa komponentlarni o'z ichiga olish uchun<br>B)Bitta activitydan boshqa
+activityga o'tish uchun<br>C)Ro'yxat elementlarini ko'rsatish uchun<br>D)Tog'ri javob keltirilmagan<br><br>#####################<br>Foydalanuvchi
+interfeysida ko'rsatiladigan rasmlarni yuklash uchun qaysi elementdan foydalaniladi?<br>*A)ImageView<br>B)ImageText<br>C)TextView<br>D)Button<br><br>#####################<br>Birinchi
+rasmiy Android operatsion tizimi qachon foydalanuvchilarga taqdim qilingan?<br>*A)2008 yil 23-sentabr<br>B)2007 yil
+13-sentabr<br>C)2007 yil 29-iyul<br>D)2008 yil 23-oktabr<br><br>#####################<br>ProgressBar qanday maqsadga
+xizmat qiladi?<br>*A)Jarayonning holatini ko'rsatish uchun<br>B)Matnning yuklanish vaqtini ko'rsatish uchun<br>C)Ma'lumotlarni
+qo'llab-quvvatlash<br>D)Boshqa ilovalarga qo'llaniladigan komponentlarni ishga tushirish uchun<br><br>#####################<br>Foydalanuvchi
+interfeysida amalni bajarish jarayonini ko'rsatadigan element qaysi?<br>*A)ProgressBar<br>B)SeekBar<br>C)RatingBar<br>D)ListView<br><br>#####################<br>Foydalanuvchi
+interfeysi elementlari orasida konteyner bo'lib, boshqa elementlarni joylash uchun ishlatiladigan element qaysi?<br>*A)LinearLayout<br>B)TextView<br>C)Button<br>D)EditText<br><br>#####################<br>Android
+operatsion tizim platformasi nechta asosiy qismdan iborat?<br>*A)5 ta, Application, Application Framework, Android
+Runtime, Libraries, Linux Kernel<br>B)3 ta, Application, IntelliJ IDEA va Linux kernel<br>C)4 ta, Application,
+Application Framework, Genymotion va Linux kernel<br>D)5 ta,Application Framework, Genymotion, Linux kernel,
+Libraries<br><br>#####################<br>RecyclerViewdan qanday maqsadda foydalaniladi?<br>*A)Ro'yxat elementlarini
+ko'rsatish uchun<br>B)Ma'lumotlarni saqlash uchun<br>C)Matnning yuklanish vaqtini ko'rsatish uchun<br>D)Boshqa
+ilovalarga qo'llaniladigan komponentlarni ishga tushirish uchun<br><br>#####################<br>Qanday turdagi mobil
+operatsion tizimlar mavjud?<br>*A)Android, BlackBerry, iOS, Marmalade, Java ME<br>B)BlackBerry, iOS, Windows, Linux,
+MeeGo<br>C)iOS, Windows, Android, Marmalade, Java ME<br>D)FireFoxOS,Windows, Android, Marmalade, Palm OS<br><br>#####################<br>Intent
+obyekti orqali ma'lumotlar jo'natishda foydalaniladigan yo'nalishlardan biri qaysi?<br>*A)Intent.EXTRA_TEXT<br>B)Intent.EXTRA_SUBJECT<br>C)Intent.EXTRA_EMAIL<br>D)Intent.EXTRA_PHONE_NUMBER<br><br>#####################<br>Android
+ilovalar ishlab chiqishda qanday instrumental dasturiy vositalar kerak?<br>*A)JDK (Java Development Kit), Android Studio<br>B)JDK
+(Java Development Kit) va Dev-C++<br>C)ADT (Android Developer Tools) va Code::Blocks<br>D)JDK (Java Development Kit),
+Code::Blocks<br><br>#####################<br>Mobil operatsion tizimlari asosan nechta platformadan iborat?<br>*A)2 ta,
+“user-facing” va quyi sathdagi real-vaqt operatsion tizimidan iborat<br>B)yagona mobil operatsion tizimidan iborat<br>C)3
+ta, “user-facing”, quyi va yuqori sathdagi operatsion tizim platformasidan iborat<br>D)2 ta, server va klient operatsion
+tizim platformsidan iborat<br><br>#####################<br>NavigationDrawer qanday maqsadga xizmat qiladi?<br>*A)Oynaning
+yonida belgilangan sahifalarga o'tish uchun<br>B)Matnning yuklanish vaqtini ko'rsatish uchun<br>C)Ma'lumotlarni
+qo'llab-quvvatlash uchun<br>D)Boshqa ilovalarga qo'llaniladigan komponentlarni ishga tushirish uchun<br><br>#####################<br>Androidda
+biror bir amalni bajarish uchun qaysi element
+ishlatiladi?<br>*A)Button<br>B)TextView<br>C)ProgressBar<br>D)ImageView<br><br>#####################<br>SeekBardan
+qanday maqsadda foydalaniladi?<br>*A)Foydalanuvchi tomonidan qiymat tanlash uchun<br>B)Matnning yuklanish vaqtini
+ko'rsatish uchun<br>C)Ma'lumotlarni qo'llab-quvvatlash uchun<br>D)Boshqa ilovalarga qo'llaniladigan komponentlarni ishga
+tushirish uchun<br><br>#####################<br>Dart tilining mobil dasturlash uchun mo‘ljallangan freymvorkini
+belgilang?<br>*A)Flutter<br>B)Spring<br>C)Django<br>D)Symphony<br><br>#####################<br>App Store haqida to‘g‘ri
+ta’rifni belgilang?<br>*A)iOS foydalanuvchilari uchun mobil ilovalar do‘koni<br>B)Android telefonlari uchun
+mo‘ljallangan platforma<br>C)Onlayn kodlar generatori<br>D)iOS uchun havfsizlikka javobgar tizim<br><br>#####################<br>Microsoft
+kompaniyasining mobil qurilmalar uchun yaratgan mobil operatsion tizimi qaysi?<br>*A)Windows Phone<br>B)Windows 10<br>C)Windows
+XP<br>D)Windows Vista<br><br>#####################<br>Android Studioda yangi Android loyiha yaratildi. Ushbu yaratilgan
+loyiha ichida avtomatik hosil bo‘lgan AndroidManifest.xml faylini izohlang?<br>*A)ilova haqidagi asosiy ma’lumotlarni
+saqlovchi fayl hisoblanadi<br>B)asosiy activity fayl hisoblanadi<br>C)asosiy layout fayl hisoblanadi<br>D)ilovadagi
+faqat activitylar haqidagi ma’lumotlarni saqlovchi fayl hisoblanadi<br><br>#####################<br>Bir nechta variantni
+birgalikda tanlash maqsadida ishlatiladigan komponenta
+qaysi?<br>*A)Checkbox<br>B)Button<br>C)Text<br>D)DatePicker<br><br>#####################<br>Android Studioda tayyor
+bo‘lgan kodni biron qurilmada ishga tushirish (build) uchun qaysi buyruq bosiladi?<br>*A)Run (Shift + F10)<br>B)Open
+(Ctrl + O)<br>C)Debug (Shift + F9)<br>D)Save (Ctrl + S)<br><br>#####################<br>iOS platformasini qaysi
+kompaniya qo‘llab-quvvatlab, rivojlantirib boradi?<br>*A)Apple<br>B)Microsoft<br>C)Facebook<br>D)Tesla<br><br>#####################<br>Android
+Studiodagi Android Virtual Device qanday vazifani bajaradi?<br>*A)Emulyator yoki telefonsiz dasturni ishlatib ko‘rish
+imkoniyatini beradi<br>B)Yozilgan dasturni sintaktik tahlil qiladi<br>C)Github bilan sinxronizatsiyani ta’minlaydi<br>D)To‘g‘ri
+javob yo‘q<br><br>#####################<br>Android qaysi IT companiya tomonidan qo‘llab-quvvatlanadi?<br>*A)Google<br>B)Facebook<br>C)Microsoft<br>D)Apple<br><br>#####################<br>Komponentaning
+ichki chap chegarasidan bo‘sh joy qoldirish uchun qaysi atributdan
+foydalaniladi?<br>*A)paddingLeft<br>B)paddingBottom<br>C)paddingRight<br>D)paddingTop<br><br>#####################<br>Quyidagi
+berilgan kod qismi qanday element qoʼyish uchun ishlatiladi? (AutoCompleteTextView android:id=”@+id/txtCountries”
+android:layout_width=”fill_parent” android:layout_height=”wrap_content” )<br>*A)AutoCompleteTextView<br>B)TextView<br>C)Button<br>D)EditView<br><br>#####################<br>BlueStacks
+dasturidan qanday maqsadda foydalanamiz?<br>*A)Emulyator<br>B)Grafik muharrir<br>C)Media Player<br>D)Brauzer<br><br>#####################<br>Flutter
+freymvorkida qaysi dasturlash tili
+ishlatiladi?<br>*A)Dart<br>B)Python<br>C)Java<br>D)C#<br><br>#####################<br>Qachon
+bildirishnomalar(notification)dan foydalaniladi?<br>*A)xabar muhim, ammo darhol o'qish va javob talab qilmaydi<br>B)xabar
+muhim, darhol o'qish va javob berishni talab qiladi<br>C)xabar muhim, ammo darhol o'qishni talab qiladi, lekin javob
+berish shart emas<br>D)xabar foydalanuvchidan javob talab qilmaydi, lekin uning ishini davom ettirish uchun muhimdir<br><br>#####################<br>Quyidagilardan
+faqat mobil OT lar ko‘rsatilgan qatorni belgilang<br>*A)Android, iOS, Symbian, Windows Phone<br>B)Django, Kivy, Windows,
+Debian<br>C)MacOS, Windows, Symbian, Linux<br>D)Flutter, Windows, Android, iOS<br><br>#####################<br>O'zining
+mobil qurilmasi dasturlari to'plamini to'ldirish uchun foydalanuvchi qaysi xizmatdan foydalanishi mumkin<br>*A)Google
+Play<br>B)Google Markets<br>C)Android Play<br>D)Google Maps<br><br>#####################<br>SQLite qanday dastur
+hisoblanadi?<br>*A)Ma’lumotlar bazasini boshqarish tizimi<br>B)Freymvork<br>C)Grafik muharrir<br>D)Emulyator<br><br>#####################<br>Faqat
+emulyator dasturlar berilgan qatorni toping?<br>*A)BlueStacks, Genymotion<br>B)Genymotion, Adobe Photoshop<br>C)Android
+Studio, Figma<br>D)Visual Studio, Arduino<br><br>#####################<br>Bir nechta platformalar uchun birdaniga dastur
+yozish imkoniga ega dasturlash tillari … dasturlash tillari deyiladi.<br>*A)Krossplatformali<br>B)obyektga
+yo‘naltirilgan<br>C)interpretatsiya qilinadigan<br>D)Protsedurali<br><br>#####################<br>Android OT qaysi
+kompaniya tomonidan yaratilgan?<br>*A)Android
+Ins<br>B)Samsung<br>C)Apple<br>D)Microsoft<br><br>#####################<br>Boshqa klassdan voris olish uchun (Dart,
+Java) qaysi kalit so‘z ishlatiladi?<br>*A)extends<br>B)runApp<br>C)main<br>D)return<br><br>#####################<br>Flutter
+frameworkida qaysi dasturlash tilida kodlar yoziladi<br>*A)dart<br>B)kotlin<br>C)swift<br>D)java<br><br>#####################<br>RelativeLayout
+chegarasidan unda joylashtirilgan elementlarni to’rt tomondan bir xil masofalarga ichkariga surish uchun qanday
+atributdan foydalaniladi<br>*A)padding<br>B)layout_margin<br>C)layout_width<br>D)layout_height<br><br>#####################<br>Funksiyadagi
+return buyrug‘i qanday vazifani bajaradi?<br>*A)o‘zidan keyin keluvchi ma’lumot (son, satr, …) ni funksiya chaqirilgan
+joyga qaytaradi (uzatadi)<br>B)Boshqa sinfdan voris oladi<br>C)Kerakli modullarni ulaydi<br>D)To‘g‘ri javob
+berilmagan<br><br>#####################<br>SDK Manager bu …<br>*A)SDK versiyalarini boshqarish utilitasi<br>B)Virtual
+qurilmalarni boshqarish utilitasi<br>C)Kodni tahlil qilish<br>D)Loyiha modullarini boshqarish utilitas<br><br>#####################<br>Android
+javada mantiqiy ma’lumotlar qaysi tip orqali e’lon qilinadi?<br>*A)boolean<br>B)int (integer)<br>C)float(double)<br>D)String<br><br>#####################<br>Joriy
+elementga murojaat qilish uchun qaysi kalit so‘z ishlatiladi?<br>*A)this<br>B)return<br>C)void<br>D)private<br><br>#####################<br>Android
+Studioda kerakli kutubxona va modullar qaysi komanda bilan
+chaqiriladi?<br>*A)import<br>B)extends<br>C)run<br>D)class<br><br>#####################<br>RadioGroup qaysi tugmani o‘z
+ichiga oladi?<br>*A)RadioButton<br>B)Kommutator<br>C)ToogleButton<br>D)CheckBox<br><br>#####################<br>Table
+(yoki DataTable) komponentasi nima uchun ishlatiladi?<br>*A)Ma’lumotlarni jadval ko‘rinishida ekranga chiqarish
+uchun<br>B)Rasmlarni joylashtirish uchun<br>C)Material dizayn kutubxonasini chaqirish uchun<br>D)Audio ma’lumotlarni
+joylashtirish uchun<br><br>#####################<br>TableLayout - oynasi jadval qatorini hosil qilish uchun qaysi
+elementdan foydalaniladi?<br>*A)TableRow<br>B)Image<br>C)Radio<br>D)Text<br><br>#####################<br>Android
+Studioda ishlab chiqilgan mobil ilova loyihasida kerakli paketlar haqidagi ma’lumotlar qaysi faylda saqlanadi?<br>*A).
+packages<br>B). metadata<br>C). gitignore<br>D)android<br><br>#####################<br>View komponentalarida isChecked()
+metodi nima uchun ishlatiladi?<br>*A)radiobutton yoki checkbox komponentasining belgilanganligini tekshirish uchun<br>B)radiobutton
+yoki button bosilganligini tekshirish uchun<br>C)Gallery dagi bironta rasm belgilanganligini tekshirish uchun<br>D)Bunday
+metod mavjud emas<br><br>#####################<br>Android SDK nima uchun ishlatiladi?<br>*A)Android ilovalarini
+yaratishda ishlatiladigan kutubxona, kodlar tasnifi va debugger hisoblanadi<br>B)Android ilovalarini yaratishda standart
+klasslarni kompilyatsiya qiladi<br>C)Virtual mashinani to‘liq boshqaradi<br>D)Java virtual mashinasi ishlashi uchun
+kutubxona<br><br>#####################<br>GUI nima?<br>*A)Foydalanuvchi grafik interfeysi<br>B)Dasturlash uchun kerakli
+modullar<br>C)Freymvork<br>D)Yuqoridagilardan hech qaysi biri<br><br>#####################<br>Android Studioda yangi
+loyiha yaratish ketma-ketligi to‘g‘ri keltirilgan javobni belgilang<br>*A)File » New » New Project<br>B)File » Open<br>C)File
+» Open recent » Project_name<br>D)File » New » Import Project<br><br>#####################<br>… tugma hisoblanib, uni
+bosish orqali muayyan amalni bajarishga dasturlash mumkin.<br>*A)Button<br>B)Radio<br>C)CheckBox<br>D)Text<br><br>#####################<br>Mobil
+ilovalar ishlab chiqishda foydalaniladigan freymvorklarni belgilang<br>*A)Kivy, Flutter, React Native<br>B)Java, PHP,
+SQL<br>C)Flask, Spring, Kivy<br>D)React JS, Node JS, C#<br><br>#####################<br>LinearLayout chegarasidan unda
+joylashtirilgan elementlarni to’rt tomondan bir xil masofalarga ichkariga surish uchun qanday atributdan
+foydalaniladi<br>*A)padding<br>B)layout_margin<br>C)layout_height<br>D)layout_width<br><br>#####################<br>Genymotion,
+BlueStacks qanday vazifani bajaruvchi dasturlar?<br>*A)emulyator<br>B)kompilyator<br>C)kod muharriri<br>D)grafik
+muharrir<br><br>#####################<br>LinearLayout komponentalarni qanday ko‘rinishda joylashtiradi?<br>*A)gorizontal
+yoki vertikal holatda<br>B)komponentalarni bir-biriga bog‘liq holda<br>C)jadval ko‘rinishida<br>D)ekranning x va y
+koordinatalari bo‘yicha<br><br>#####################<br>Emulyator qanday dastur?<br>*A)Bir OT uchun yozilgan dasturni
+boshqa OT da ishlashini ta'minlovchi dastur<br>B)Yozilgan kodni interpretatsiya qilib beruvchi dastur<br>C)Bir
+dasturlash tilida yozilgan kodni boshqa tilga konvertatsiya qiluvchi dastur<br>D)Yozilgan kodni kompilyatsiya qilib
+beruvchi dastur<br><br>#####################<br>"Mobil ilova" atamasi qanday ilovalarga nisbatan ishlatiladi?<br>*A)Mobil
+platformalarda ishlovchi ilovalar<br>B)Desktop interfeysda ishlovchi ilovalar<br>C)Linux OT da ishlovchi ilovalar<br>D)Web
+interfeysda ishlovchi ilovalar<br><br>#####################<br>Androidga to‘g‘ri ta’rif berilgan qatorni belgilan<br>*A)Linux
+Kernell yadrosida ko‘tarilgan mobil OT<br>B)Apple qurilmalari uchun yaratilgan mobil OT<br>C)Windows OT negizida
+yaratilgan mobil OT<br>D)Java Development Kit dasturiy vositalari to‘plami komponentasi<br><br>#####################<br>Grafik
+interfeys bu<br>*A)Foydalanuvchining grafik interfeysi<br>B)Operatsion tizim. Qurilmadagi eng muhim dastur<br>C)Ichki
+rivojlanish muhiti<br>D)Android dastur kodi fayli to‘plangan<br><br>#####################<br>Androidda avtomatik taqdim
+etiladigan ma’lumotlar bazasini boshqarish tizimini belgilang<br>*A)SQLite<br>B)Apache<br>C)Oracle<br>D)MySQL<br><br>#####################<br>Play
+Store nima?<br>*A)Android telefonlari uchun mo‘ljallangan mobil ilovalar do‘koni<br>B)Foydalanuvchilarga iTunes
+do‘konidan turli xil mobil ilovalarni ko‘rib chiqish va yuklab olish imkoniyatini beruvchi xizmat<br>C)App Store-dan
+bepul yoki pullik dasturlarni yuklash servisi<br>D)Mobil ilovalar ishlab chiqish uchun onlayn platforma<br><br>#####################<br>Ilovada
+matn(String)larni qaysi faylda saqlash mumkin<br>*A)string.xml<br>B)manifest.xml<br>C)web.xml<br>D)text.xml<br><br>#####################<br>Kivy
+freymvorkida qaysi dasturlash tilidan foydalaniladi?<br>*A)Python<br>B)PHP<br>C)Ruby<br>D)Pascal<br><br>#####################<br>Android
+Studioda Flutter bilan ishlaganda Dart dasturlash tiliga doir maxsus sozlamalar qaysi faylda saqlanadi?<br>*A).dart<br>B)android<br>C)ios<br>D)lib<br><br>#####################<br>CheckBox
+komponentasiga to‘g‘ri ta’rif berilgan qatorni belgilang<br>*A)bu maxsus turdagi tugma va ikkita holatda bo‘lishi
+mumkin: checked yoki unchecked.<br>B)tugmachaga o‘xshash vidjet bo‘lib, unda rasm tugma sifatida ishlatilishi<br>C)Sahifaga
+rasm qo‘yish uchun ishlatiladi<br>D)tugmachadir va bu tugma bosilganda ma'lum bir operatsiya amalga oshiriladi.<br><br>#####################<br>ToggleButton
+qanday komponenta hisoblanadi?<br>*A)checked/unchecked holatining indicator li ko‘rinishi<br>B)Buttonga o‘xshash va bu
+komponentaga rasm joylashtirish mumkin<br>C)oddiy checkboxga o‘xshash komponenta<br>D)radiobutton komponentasining
+boshqacha ko‘rinishi<br><br>#####################<br>… buttonga o‘xshash vidjet bo‘lib, rasmni tugma sifatida ishlatish
+mumkin.<br>*A)ImageButton<br>B)EditText<br>C)Radio<br>D)Text<br><br>#####################<br>Android haqida to‘g‘ri
+ta’rif berilgan qatorni belgilang?<br>*A)Barcha javoblar to‘g‘ri<br>B)Linux asosida yaratilgan<br>C)Open source<br>D)Foydalanish
+tekin<br><br>#####################<br>Xabarni chiqarish uchun qaysi sinfdan foydalaniladi?<br>*A)Toast<br>B)Hint<br>C)Text<br>D)Message<br><br>#####################<br>Android
+Studioda virtual qurilmalar (telefon, planshet, …) ni yaratish, boshqarish imkonini beruvchi vositani belgilang<br>*A)AVD
+manager<br>B)SDK manager<br>C)Resource manager<br>D)Project manager<br><br>#####################<br>Android ilovalarida
+rasmli ma’lumotlarni qaysi komponenta yordamida joylashtirish mumkin<br>*A)ImageView<br>B)TextView<br>C)EditText<br>D)ImageClass<br><br>#####################<br>Ham
+android, ham iOS tizimlari uchun ilovalar ishlab chiqish mumkin bo’lgan frameworkni
+belgilang<br>*A)Flutter<br>B)Dart<br>C)Android studio<br>D)Xcode<br><br>#####################<br>RelativeLayoutdan
+foydalanib elementlarni markazga(ham vertikal, ham gorizantal) joylashtirishda qanday atributdan foydalaniladi<br>*A)layout_centerInParent<br>B)layout_centerHorizontal<br>C)layout_centerVertical<br>D)layout_center<br><br>#####################<br>TextView
+elementidagi matn rangini qaysi atribut yordamida o’rnatish mumkin<br>*A)textColor<br>B)colorText<br>C)background<br>D)color<br><br>#####################<br>Android
+Studioda dastur kodini kompilyatsiya qilib, to‘g‘ridan to‘g‘ri telefonga o‘rnatish mumkinmi?<br>*A)Mumkin, USB interfeys
+va ba’zi sozlamalar bilan<br>B)Mumkin emas<br>C)Mumkin, WiFi yoki Bluetooth orqali<br>D)To‘g‘ri javob yo‘q<br><br>#####################<br>Android
+ilovalari garafik interfeysida elementlar idsi qaysi atribut yordamida o’rnatiladi<br>*A)id<br>B)layout_id<br>C)text<br>D)padding<br><br>#####################<br>Ma’lumotlarni
+jadval ko‘rinishida aks ettirish uchun qaysi komponenta ishlatiladi?<br>*A)TableRow, TableLayout<br>B)Text, TextView<br>C)Radio,
+RadioButton<br>D)ListView<br><br>#####################<br>… buttonning maxsus turi hisoblanib, ikki hil holatda bo‘lishi
+mumkin: checked yoki unchecked.<br>*A)CheckBox<br>B)Image<br>C)Radio<br>D)Text<br><br>#####################<br>Mobil
+ilovalar dizaynini ishlab chiqishda UI tushunchasi nimani ifodalaydi?<br>*A)Foydalanuvchi interfeysi<br>B)Foydalanuvchi
+tajribasi<br>C)Mijoz talablari<br>D)Texnik topshiriq<br><br>#####################<br>TableLayout komponentalarni qanday
+ko‘rinishda joylashtiradi?<br>*A)jadval ko‘rinishida<br>B)ekranning x va y koordinatalari bo‘yicha<br>C)komponentalarni
+bir-biriga bog‘liq holda<br>D)gorizontal yoki vertikal holatda<br><br>#####################<br>Android Studioda ishlab
+chiqilgan mobil ilova loyihasida android katalogida qanday ma’lumotlar saqlanadi?<br>*A)Android maxsus (native)
+kodlari<br>B)iOS ga oid kodlar<br>C)Flutter yangilanishiga oid metama’lumotlar<br>D)Kutubxona sozlamalari<br><br>#####################<br>Qaysi
+turdagi qiymat ekranning to'liq kengligigacha egallaydi?<br>*A)match_parent<br>B)wrap_parent<br>C)size_parent<br>D)fill_parent<br><br>#####################<br>Zamonaviy
+smartfonlar quyidagi qaysi funksiyalarga ega?<br>*A)Barcha javoblar to‘g‘ri<br>B)Wi-Fi, Bluetooth<br>C)GPS, Voice
+Call<br>D)Touch Screen, Media Player<br><br>#####################<br>Android mobil qurilmalari uchun Googlening ilovalar
+do‘koni qanday nomlanadi?<br>*A)Play Market<br>B)Amazon<br>C)Github<br>D)App Store<br><br>#####################<br>Ishlab
+chiqilgan ilovani ishchi kompyuterda testlash uchun qanday vositadan foydalaniladi?<br>*A)Android virtual device
+(AVD)<br>B)Android virtual machine (AVM)<br>C)Java virtual machine (JVM)<br>D)Dalvik virtual machine (DVM)<br><br>#####################<br>Android-ilovalarida
+foydalanuvchi grafik interfeysini yaratishda qaysi razmetkali tildan foydalaniladi?<br>*A)xml<br>B)gml<br>C)xhtml<br>D)html<br><br>#####################<br>Mobil
+ilovalar dizaynini ishlab chiqishda UX tushunchasi nimani ifodalaydi?<br>*A)Foydalanuvchi tajribasi<br>B)Foydalanuvchi
+interfeysi<br>C)Moslashuvchan dizayn<br>D)Adaptiv interfeys<br><br>#####################<br>Vaqt bilan ishlash uchun
+Android Studioda qaysi komonenta ishlatiladi?<br>*A)TimePicker<br>B)RadioButton<br>C)TextView<br>D)CheckBox<br><br>#####################<br>Mobil
+dasturlashda faqatgina matn ko‘rinishidagi ma'lumotlarni ko‘rsatish uchun ishlatiladi va <........> elementi yordamida
+yaratiladi<br>*A)TextView<br>B)ListView<br>C)GridView<br>D)DataTable<br><br>#####################<br>Qaysi faylda
+loyihaning satrli ma’lumotlari (resurslari) joylashadi?<br>*A)strings.xml<br>B)AndroidManifest.xml<br>C)activityfullscreen.xml<br>D)text.xml<br><br>#####################<br>Sinf
+yaratish qaysi kalit so‘z yordamida amalga oshiriladi?<br>*A)class<br>B)function<br>C)extend<br>D)Debug<br><br>#####################<br>Komponentaning
+ichki chegarasida bo‘sh joy qoldirish uchun qaysi atributdan foydalaniladi?<br>*A)padding<br>B)margin<br>C)context<br>D)background<br><br>#####################<br>Mavjud
+variantlardan faqat bittasini belgilash uchun ishlatiladigan komponenta qaysi?<br>*A)Radio/RadioButton<br>B)Text/TextView<br>C)Grid/GridView<br>D)Table/DataTable<br><br>#####################<br>Qaysi
+MBBT avtomatik ravishda Android tomonidan taqdim etiladi?<br>*A)SQLite<br>B)Apache<br>C)Oracle<br>D)MySQL<br><br>#####################<br>Android
+Studioda qanday mahsulotlar yaratish mumkin?<br>*A)Barcha javoblar to‘g‘ri<br>B)Mobil telefonlar uchun dasturlar<br>C)Planshetlar
+uchun dasturlar<br>D)Android televizorlar uchun dasturlar<br><br>#####################<br>Orqafon rangini qaysi atribut
+orqali o‘rnatiladi?<br>*A)android:background="#E3254B"<br>B)android:textcolor="#DC2020"<br>C)android:Color="#
+B15355"<br>D)android:id="#FF88FF"<br><br>#####################<br>Komponentaning tashqi chegarasida bo‘sh joy qoldirish
+uchun qaysi atributdan foydalaniladi?<br>*A)margin<br>B)context<br>C)background<br>D)padding<br><br>#####################<br>Komponentaning
+tashqi chap chegarasidan bo‘sh joy qoldirish uchun qaysi atributdan
+foydalaniladi?<br>*A)marginLeft<br>B)marginBottom<br>C)marginRight<br>D)marginTop<br><br>#####################<br>JVM
+kengaytmasi qanday?<br>*A)Java Vitual Machine<br>B)Java Vending Machine<br>C)Java Virtual Mechanism<br>D)Java Visual
+Mechanism<br><br>#####################<br>Matematik funksiyalarni o‘z ichiga olgan kutubxona qanday nomlanadi?<br>*A)Math<br>B)Material<br>C)Cupertino<br>D)Main<br><br>#####################<br>AVD
+ning o‘rniga qanday virtual mashinalardan foydalanish mumkin?<br>*A)Genymotion, BlueStacks<br>B)JDK, Android SDK,
+Genymotion<br>C)BlueStacks, Android SDK, Eclipse<br>D)Android SDK, Eclipse, IntelliJ
+IDEA<br><br>#####################<br>Obyekt vertikal uzunligini sozlash uchun qaysi atributga murojaat qilinadi?<br>*A)height<br>B)width<br>C)title<br>D)caption<br><br>#####################<br>Android
+Studioda mavjud loyihani ochish ketma-ketligi to‘g‘ri keltirilgan javobni belgilang?<br>*A)File » Open<br>B)File » New »
+New Project<br>C)File » Open recent » Project_name<br>D)File » New » Import Project<br><br>#####################<br>AutoCompleteTextView
+va EditText komponentalarning bir-biridan farqi nimada?<br>*A)AutoCompleteTextView komponentasi kiritilayotgan matnni
+avtomatik to‘ldirish imkoniyatini beradi<br>B)AutoCompleteTextView komponentasida matn to‘liq ko‘rinadi<br>C)AutoCompleteTextView
+komponentasiga faqat matn kiritiladi<br>D)Ikkalasi ham bir xil funksiyani bajaradi<br><br>#####################<br>Android
+Studioda tayyor bo‘lgan faylni saqlash uchun qaysi buyruq bosiladi?<br>*A)Save (Ctrl + S)<br>B)Open (Ctrl + O)<br>C)Debug
+(Shift + F9)<br>D)Run (Shift + F10)<br><br>#####################<br>Obyekt gorizontal uzunligini (kengligini) sozlash
+uchun qaysi atributga murojaat
+qilinadi?<br>*A)width<br>B)height<br>C)title<br>D)caption<br><br>#####################<br>Android ilova yaratilganda
+loyihaning qaysi faylida ilova haqidagi umumiy ma’lumotlar saqlanadi?<br>*A)AndroidManifest.xml<br>B)res/layout/main.xml<br>C)AndroidManifest.java<br>D)Manifest.xml<br><br>#####################<br>CheckBox
+qiymati true yoki false ekanligini tekshirish uchun bu sinfining qanday metodidan foydalaniladi?<br>*A)isChecked()<br>B)setAllCaps()<br>C)animate()<br>D)callOnClick()<br><br>#####################<br>Komponentaning
+ichki yuqori chegarasidan bo‘sh joy qoldirish uchun qaysi atributdan
+foydalaniladi?<br>*A)paddingTop<br>B)paddingBottom<br>C)paddingRight<br>D)paddingLeft<br><br>#####################<br>…-TextView
+ning qo‘shimcha imkoniyatli turi hisoblanib, foydalanuvchi ushbu komponenta orqali ma’lumot kiritishi mumkin.<br>*A)EditText<br>B)Button<br>C)Checkbox<br>D)RadioButton<br><br>#####################<br>SDK
+kengaytmasi qanday?<br>*A)Software Development Kit<br>B)Self-Development Kernel<br>C)Software Design Kit<br>D)Standart
+Development Kit<br><br>#####################<br>… - komponentalarning jadval asosida
+joylashuvidir.<br>*A)TableLayout<br>B)LinearLayout<br>C)FrameLayout<br>D)AbsoluteLayout<br><br>#####################<br>…-
+bu komponentalarni bitta qatorga (gorizontal) yoki ustun (vertikal)ga joylashtirish uchun ishlatiladi.<br>*A)LinearLayout<br>B)FrameLayout<br>C)AbsoluteLayout<br>D)TableLayout<br><br>#####################<br>Android
+Studioda matnga rang berish qaysi atribut orqali o‘rnatiladi?<br>*A)android: textcolor<br>B)android: text<br>C)android:textStyle<br>D)android:
+id<br><br>#####################<br>Android Studioda kiritilgan matn qalinligini sozlash to‘g‘ri kiritilgan qatorni
+belgilang?<br>*A)android:textStyle="bold"<br>B)android:textColor="#ffff"<br>C)android:text="black"<br>D)android:textStyle="italic"<br><br>#####################<br>
+</html>
 </body>
 </html>
